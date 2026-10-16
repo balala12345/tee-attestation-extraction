@@ -1,0 +1,13 @@
+version_or_keybox_number=1
+ec_private_key.der len=138
+ec_cert_count=3
+ec_cert_0.der len=503
+ec_cert_1.der len=920
+ec_cert_2.der len=1312
+rsa_private_key.der len=1794
+rsa_cert_count=3
+rsa_cert_0.der len=1252
+rsa_cert_1.der len=1349
+rsa_cert_2.der len=1312
+plaintext_len=8624
+tail_unmodified_len=92

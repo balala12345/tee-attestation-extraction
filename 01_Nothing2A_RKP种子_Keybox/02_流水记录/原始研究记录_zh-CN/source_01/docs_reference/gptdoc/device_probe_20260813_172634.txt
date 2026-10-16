@@ -1,0 +1,15 @@
+$ adb devices -l
+
+$ adb get-state
+
+$ selected getprop
+
+$ id/su
+
+$ service list key/rkp
+
+$ ps relevant
+
+$ hwservicemanager relevant
+
+$ cmd package rkpd

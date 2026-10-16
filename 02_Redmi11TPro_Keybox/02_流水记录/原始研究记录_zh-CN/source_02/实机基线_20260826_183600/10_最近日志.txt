@@ -1,0 +1,254 @@
+
+===== 10_最近日志 =====
+$ adb -s <DEVICE_SERIAL> shell logcat -b all -d -t 4000 2>&1 | grep -Ei 'keym|beanpod|teei|microtrust|remote.?provision|rkpd|rkp|eek|bcc'
+08-26 18:33:15.071  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10193, uidState = 10
+08-26 18:33:15.077  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10193, uidState = 19
+08-26 18:33:15.285  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10075, uidState = 19
+08-26 18:33:15.830  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10075, uidState = 10
+08-26 18:33:16.054  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10075, uidState = 19
+08-26 18:33:34.345  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10058, uidState = 8
+08-26 18:33:40.677  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10163, uidState = 8
+08-26 18:33:40.690  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10153, uidState = 10
+08-26 18:33:42.065  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10141, uidState = 10
+08-26 18:33:56.108  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10106, uidState = 15
+08-26 18:34:03.383  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10164, uidState = 11
+08-26 18:34:03.697  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10164, uidState = 19
+08-26 18:34:15.075  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10193, uidState = 19
+08-26 18:34:15.155  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10165, uidState = 8
+08-26 18:34:15.209  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10120, uidState = 8
+08-26 18:34:15.432   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.479   520   520 I beanpodkeymaster: cmd:4 Received 48 byte response
+08-26 18:34:15.479   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.492   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.493   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:15.493   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.494   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.495   520   520 I beanpodkeymaster: cmd:c Received 36 byte response
+08-26 18:34:15.495   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.500   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.507  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10165, uidState = 10
+08-26 18:34:15.514  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10165, uidState = 19
+08-26 18:34:15.523   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:15.523   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.525   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.525   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:15.525   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.526   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.526   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:15.526   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.534   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.556   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:15.556   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.559   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.560   520   520 I beanpodkeymaster: cmd:8 Received 165 byte response
+08-26 18:34:15.560   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.560   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.561   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:15.561   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.573   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.616   520   520 I beanpodkeymaster: cmd:4 Received 48 byte response
+08-26 18:34:15.617   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.619   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.620   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:15.620   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.622   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.623   520   520 I beanpodkeymaster: cmd:c Received 36 byte response
+08-26 18:34:15.624   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.628   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.651   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:15.651   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.653   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.655   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:15.655   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.656   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.658   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:15.658   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.663   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.686   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:15.686   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.688   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.690   520   520 I beanpodkeymaster: cmd:8 Received 132 byte response
+08-26 18:34:15.690   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.691   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.693   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:15.693   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.770   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.814   520   520 I beanpodkeymaster: cmd:4 Received 48 byte response
+08-26 18:34:15.814   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.817   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.819   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:15.819   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.820   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.822   520   520 I beanpodkeymaster: cmd:c Received 36 byte response
+08-26 18:34:15.822   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.826   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.848   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:15.848   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.851   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.851   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:15.851   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.853   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.854   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:15.854   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.858   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.881   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:15.881   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.883   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.884   520   520 I beanpodkeymaster: cmd:8 Received 165 byte response
+08-26 18:34:15.884   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.886   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.887   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:15.887   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.898   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.942   520   520 I beanpodkeymaster: cmd:4 Received 48 byte response
+08-26 18:34:15.942   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.945   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.946   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:15.947   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.948   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.949   520   520 I beanpodkeymaster: cmd:c Received 36 byte response
+08-26 18:34:15.949   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.959   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:15.981   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:15.982   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:15.984   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:15.985   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:15.986   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:15.987   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:15.988   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:15.989   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:15.994   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.017   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.017   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.019   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.021   520   520 I beanpodkeymaster: cmd:8 Received 132 byte response
+08-26 18:34:16.021   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.022   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.023   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.024   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.076   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.120   520   520 I beanpodkeymaster: cmd:4 Received 48 byte response
+08-26 18:34:16.120   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.122   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.123   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:16.123   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.124   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.125   520   520 I beanpodkeymaster: cmd:c Received 36 byte response
+08-26 18:34:16.125   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.129   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.151   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.151   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.153   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.155   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:16.155   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.156   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.157   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.158   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.162   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.185   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.186   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.188   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.189   520   520 I beanpodkeymaster: cmd:8 Received 165 byte response
+08-26 18:34:16.190   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.190   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.233   520   520 I beanpodkeymaster: cmd:4 Received 48 byte response
+08-26 18:34:16.234   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.234   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.235   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.236   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.238   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.239   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:16.240   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.241   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.242   520   520 I beanpodkeymaster: cmd:c Received 36 byte response
+08-26 18:34:16.242   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.246   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.290   520   520 I beanpodkeymaster: cmd:4 Received 48 byte response
+08-26 18:34:16.290   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.292   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.294   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:16.294   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.295   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.317   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.317   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.318   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.319   520   520 I beanpodkeymaster: cmd:c Received 36 byte response
+08-26 18:34:16.319   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.321   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.323   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:16.323   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.324   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.346   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.346   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.347   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.348   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.348   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.351   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.352   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:16.353   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.353   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.376   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.376   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.376   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.378   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.378   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.380   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.381   520   520 I beanpodkeymaster: cmd:8 Received 165 byte response
+08-26 18:34:16.381   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.383   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.405   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.405   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.406   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.407   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.408   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.409   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.411   520   520 I beanpodkeymaster: cmd:8 Received 132 byte response
+08-26 18:34:16.411   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.413   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.415   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.415   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.424   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.468   520   520 I beanpodkeymaster: cmd:4 Received 48 byte response
+08-26 18:34:16.468   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.470   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.471   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:16.471   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.471   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.472   520   520 I beanpodkeymaster: cmd:c Received 36 byte response
+08-26 18:34:16.472   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.476   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.498   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.498   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.501   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.502   520   520 I beanpodkeymaster: cmd:8 Received 34 byte response
+08-26 18:34:16.503   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.504   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.505   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.505   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:34:16.511   520   520 I beanpodkeymaster: Enter BeanpodKeymaster BeginOperation
+08-26 18:34:16.534   520   520 I beanpodkeymaster: cmd:4 Received 24 byte response
+08-26 18:34:16.534   520   520 I beanpodkeymaster: Exit BeanpodKeymaster BeginOperation
+08-26 18:34:16.536   520   520 I beanpodkeymaster: Enter BeanpodKeymaster UpdateOperation
+08-26 18:34:16.538   520   520 I beanpodkeymaster: cmd:8 Received 132 byte response
+08-26 18:34:16.538   520   520 I beanpodkeymaster: Exit BeanpodKeymaster UpdateOperation
+08-26 18:34:16.539   520   520 I beanpodkeymaster: Enter BeanpodKeymaster FinishOperation
+08-26 18:34:16.541   520   520 I beanpodkeymaster: cmd:c Received 20 byte response
+08-26 18:34:16.541   520   520 I beanpodkeymaster: Exit BeanpodKeymaster FinishOperation
+08-26 18:35:04.483  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10106, uidState = 5
+08-26 18:35:10.545  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10106, uidState = 15
+08-26 18:35:35.431  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10164, uidState = 11
+08-26 18:35:35.441  1543  1745 I MiuiNetworkPolicy: updateUidState uid = 10164, uidState = 19
+08-26 18:35:57.760  5668  5668 I auditd  : type=1400 audit(0.0:521): avc: denied { call } for comm="service" scontext=u:r:shell:s0 tcontext=u:r:hal_keymint_default:s0 tclass=binder permissive=0
+08-26 18:35:57.760  5668  5668 W service : type=1400 audit(0.0:521): avc: denied { call } for scontext=u:r:shell:s0 tcontext=u:r:hal_keymint_default:s0 tclass=binder permissive=0
+08-26 18:35:57.764  5668  5668 I auditd  : type=1400 audit(0.0:522): avc: denied { call } for comm="service" scontext=u:r:shell:s0 tcontext=u:r:hal_keymint_default:s0 tclass=binder permissive=0
+08-26 18:35:57.764  5668  5668 W service : type=1400 audit(0.0:522): avc: denied { call } for scontext=u:r:shell:s0 tcontext=u:r:hal_keymint_default:s0 tclass=binder permissive=0
+08-26 18:35:57.764  5668  5668 I auditd  : type=1400 audit(0.0:523): avc: denied { call } for comm="service" scontext=u:r:shell:s0 tcontext=u:r:hal_keymint_default:s0 tclass=binder permissive=0
+08-26 18:35:57.764  5668  5668 W service : type=1400 audit(0.0:523): avc: denied { call } for scontext=u:r:shell:s0 tcontext=u:r:hal_keymint_default:s0 tclass=binder permissive=0
+08-26 18:35:57.764  5668  5668 I auditd  : type=1400 audit(0.0:524): avc: denied { call } for comm="service" scontext=u:r:shell:s0 tcontext=u:r:hal_keymint_default:s0 tclass=binder permissive=0
+08-26 18:35:57.764  5668  5668 W service : type=1400 audit(0.0:524): avc: denied { call } for scontext=u:r:shell:s0 tcontext=u:r:hal_keymint_default:s0 tclass=binder permissive=0
+08-26 18:35:59.521   375   375 E SELinux : avc:  denied  { find } for interface=vendor.microtrust.hardware.soter::ISoter sid=u:r:shell:s0 pid=5670 scontext=u:r:shell:s0 tcontext=u:object_r:teei_hal_wechat_hwservice:s0 tclass=hwservice_manager permissive=0
+08-26 18:35:59.521   375   375 I auditd  : avc:  denied  { find } for interface=vendor.microtrust.hardware.soter::ISoter sid=u:r:shell:s0 pid=5670 scontext=u:r:shell:s0 tcontext=u:object_r:teei_hal_wechat_hwservice:s0 tclass=hwservice_manager permissive=0
+08-26 18:35:59.524   375   375 E SELinux : avc:  denied  { find } for interface=vendor.microtrust.hardware.thh::IThhDevice sid=u:r:shell:s0 pid=5670 scontext=u:r:shell:s0 tcontext=u:object_r:teei_hal_thh_hwservice:s0 tclass=hwservice_manager permissive=0
+08-26 18:35:59.524   375   375 I auditd  : avc:  denied  { find } for interface=vendor.microtrust.hardware.thh::IThhDevice sid=u:r:shell:s0 pid=5670 scontext=u:r:shell:s0 tcontext=u:object_r:teei_hal_thh_hwservice:s0 tclass=hwservice_manager permissive=0
+08-26 18:36:00.292  6165  6165 I auditd  : type=1400 audit(0.0:541): avc: denied { getattr } for comm="find" path="/data/vendor/thh" dev="dm-12" ino=392 scontext=u:r:shell:s0 tcontext=u:object_r:teei_data_file:s0 tclass=dir permissive=0
+08-26 18:36:00.292  6165  6165 W find    : type=1400 audit(0.0:541): avc: denied { getattr } for path="/data/vendor/thh" dev="dm-12" ino=392 scontext=u:r:shell:s0 tcontext=u:object_r:teei_data_file:s0 tclass=dir permissive=0

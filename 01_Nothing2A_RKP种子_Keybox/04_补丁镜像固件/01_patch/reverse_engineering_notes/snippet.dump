@@ -1,0 +1,89 @@
+
+analysis/snippet.o:	file format elf64-littleaarch64
+
+Disassembly of section .strtab:
+
+0000000000000000 <.strtab>:
+       0: 00 2e 74 65  	<unknown>
+       4: 78 74 00 5f  	<unknown>
+       8: 73 74 61 72  	<unknown>
+       c: 74 00 73 6b  	<unknown>
+      10: 69 70 00 2e  	<unknown>
+      14: 73 74 72 74  	<unknown>
+      18: 61 62 00 2e  	<unknown>
+      1c: 73 79 6d 74  	<unknown>
+      20: 61 62 00 24  	<unknown>
+      24: 64 2e 35 00  	<unknown>
+      28: 24 78 2e 34  	cbz	w4, 0x5cf2c <.strtab+0x5cf2c>
+      2c: 00 24 64 2e  	uhsub	v0.4h, v0.4h, v4.4h
+      30: 33 00 24 78  	<unknown>
+      34: 2e 32 00 24  	<unknown>
+      38: 64 2e 31 00  	<unknown>
+      3c: 24 78 2e 30  	adr	x4, #380677
+      40: 00           	<unknown>
+
+Disassembly of section .text:
+
+0000000000000000 <_start>:
+       0: e0 87 44 a9  	ldp	x0, x1, [sp, #72]
+       4: e2 03 01 aa  	mov	x2, x1
+       8: e1 03 00 aa  	mov	x1, x0
+       c: e0 03 14 aa  	mov	x0, x20
+
+0000000000000010 <$d.1>:
+      10: cd 0f ff 97  	bl	0xfffffffffffc3f44 <skip+0xfffffffffffc3f0c>
+
+0000000000000014 <$x.2>:
+      14: e0 87 44 a9  	ldp	x0, x1, [sp, #72]
+
+0000000000000018 <$d.3>:
+      18: fd 71 ff 97  	bl	0xfffffffffffdc80c <skip+0xfffffffffffdc7d4>
+      1c: 5f 73 ff 17  	b	0xfffffffffffdcd98 <skip+0xfffffffffffdcd60>
+
+0000000000000020 <$x.4>:
+      20: f3 03 00 2a  	mov	w19, w0
+      24: a0 00 00 35  	cbnz	w0, 0x38 <skip>
+      28: e1 1b 40 f9  	ldr	x1, [sp, #48]
+      2c: e0 03 16 aa  	mov	x0, x22
+      30: e2 03 15 aa  	mov	x2, x21
+
+0000000000000034 <$d.5>:
+      34: c4 0f ff 97  	bl	0xfffffffffffc3f44 <skip+0xfffffffffffc3f0c>
+
+0000000000000038 <skip>:
+      38: bd 74 ff 17  	b	0xfffffffffffdd32c <skip+0xfffffffffffdd2f4>
+
+Disassembly of section .symtab:
+
+0000000000000000 <.symtab>:
+		...
+      18: 3c 00 00 00  	udf	#60
+      1c: 00 00 02 00  	<unknown>
+		...
+      30: 37 00 00 00  	udf	#55
+      34: 00 00 02 00  	<unknown>
+      38: 10 00 00 00  	udf	#16
+		...
+      48: 32 00 00 00  	udf	#50
+      4c: 00 00 02 00  	<unknown>
+      50: 14 00 00 00  	udf	#20
+		...
+      60: 2d 00 00 00  	udf	#45
+      64: 00 00 02 00  	<unknown>
+      68: 18 00 00 00  	udf	#24
+		...
+      78: 28 00 00 00  	udf	#40
+      7c: 00 00 02 00  	<unknown>
+      80: 20 00 00 00  	udf	#32
+		...
+      90: 0e 00 00 00  	udf	#14
+      94: 00 00 02 00  	<unknown>
+      98: 38 00 00 00  	udf	#56
+		...
+      a8: 23 00 00 00  	udf	#35
+      ac: 00 00 02 00  	<unknown>
+      b0: 34 00 00 00  	udf	#52
+		...
+      c0: 07 00 00 00  	udf	#7
+      c4: 10 00 02 00  	<unknown>
+		...

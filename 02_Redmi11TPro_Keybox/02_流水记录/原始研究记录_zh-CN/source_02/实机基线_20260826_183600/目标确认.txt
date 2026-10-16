@@ -1,0 +1,4 @@
+serial=<TARGET_SERIAL>
+product=xaga
+kernel=5.10.66-android12-9-00001-g41ff3fa8fff9-ab8171928
+host_time=2026-08-26T18:36:00+08:00

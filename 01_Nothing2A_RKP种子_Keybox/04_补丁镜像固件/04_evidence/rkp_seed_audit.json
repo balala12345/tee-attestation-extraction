@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "seed_length": 32,
+  "seed_sha256": "e0e2617b3156d12a0b7108b71340484c3e4ae965ae686d7360c8032f2d82a7c3",
+  "raw_secret_printed": false,
+  "meaning": "designated 32-byte RKP material; raw value omitted from sanitized delivery"
+}

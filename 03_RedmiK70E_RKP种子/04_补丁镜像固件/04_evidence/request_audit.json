@@ -1,0 +1,17 @@
+{
+  "all_five_dice_signatures_verified": true,
+  "challenge_sha256": "70451453a549999e66ec652d77c770e7f8edeab15dd53cd78a543c7d25e39219",
+  "clean_device_info_exact_match": true,
+  "clean_device_info_sha256": "19f9f9b0a96254da4c45aa0e85a3a8ca8de2496738aebc3dc88fcc4be88fd921",
+  "identity_leaf_spki_sha256": "64c672084035d3b8af4c7f2b036ce8905c06cd60bf39fa9bd6ec44cbe0ba4ad2",
+  "keys_to_sign_count": 1,
+  "modified_dice_exact_match": true,
+  "outer_leaf_signature_verified": true,
+  "proper_dice_entry_count": 5,
+  "registered_uds_exact_match": true,
+  "request_length": 2611,
+  "request_sha256": "f0c1208abd682702ea7de9fd19223d267c26ef8c2b7517f73b291b8750fc9303",
+  "research_only_semantically_hybrid": true,
+  "software_key_spki_sha256": "1e5ec6f483c8fb632305a7aa4e2b0be4a1a2fa4aca0c38408a932b3d5a84bc67",
+  "status": "PASS"
+}

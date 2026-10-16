@@ -1,0 +1,17 @@
+{
+  "code_cave_va": "0x1366cc",
+  "entry_input_register": "x2 (32 bytes)",
+  "host_only_no_flash": true,
+  "keygen_hook_va": "0x6236c",
+  "keygen_return_va": "0x62370",
+  "p256_cdi_hook_va": "0xda938",
+  "p256_cdi_resume_va": "0xda93c",
+  "patched_elf_sha256": "a4e55e1511dcc31fb8318b89b42d689e6057a55f1b69adc4cd07e09260491a95",
+  "patched_ta_sha256": "68c58aad8e70a5d85f1376582d60c03d4acb39ccf0332d9f593e9de86274b232",
+  "private_blob_is_diagnostic_only": true,
+  "purpose": "authorized CTF P256KeypairFromCDI 32-byte seed diagnostic",
+  "scratch_va": "0x164100",
+  "snippet_length": 48,
+  "source_elf_sha256": "52c61b717dfe57316a6c4d66b4f3404af6b127f1e9c1b5fabddd44268b2844aa",
+  "source_ta_sha256": "facdfe3d8cb546acbbb4dc233b139a4dfd65f01e4791bbc26c474eb2eb0a3f32"
+}

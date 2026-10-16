@@ -1,0 +1,114 @@
+$ ls mcRegistry
+total 8444
+-rw-r--r-- 1 root root    32483 2009-01-01 08:00 020f0000000000000000000000000000.drbin
+-rw-r--r-- 1 root root    32483 2009-01-01 08:00 020f0000000000000000000000000000.tlbin
+-rw-r--r-- 1 root root    16043 2009-01-01 08:00 031c0000000000000000000000000000.drbin
+-rw-r--r-- 1 root root    16043 2009-01-01 08:00 031c0000000000000000000000000000.tlbin
+-rw-r--r-- 1 root root 10095955 2009-01-01 08:00 05060000000000000000000000000000.tabin
+-rw-r--r-- 1 root root     7779 2009-01-01 08:00 05070000000000000000000000000000.drbin
+-rw-r--r-- 1 root root     7779 2009-01-01 08:00 05070000000000000000000000000000.tlbin
+-rw-r--r-- 1 root root    15315 2009-01-01 08:00 05120000000000000000000000000001.drbin
+-rw-r--r-- 1 root root    15315 2009-01-01 08:00 05120000000000000000000000000001.tlbin
+-rw-r--r-- 1 root root    15451 2009-01-01 08:00 06090000000000000000000000000000.drbin
+-rw-r--r-- 1 root root    15451 2009-01-01 08:00 06090000000000000000000000000000.tlbin
+-rw-r--r-- 1 root root   281651 2009-01-01 08:00 0706000000000000000000000000004d.tlbin
+-rw-r--r-- 1 root root    15331 2009-01-01 08:00 07061000000000000000000000000000.tlbin
+-rw-r--r-- 1 root root    21075 2009-01-01 08:00 07150000000000000000000000000000.drbin
+-rw-r--r-- 1 root root    21075 2009-01-01 08:00 07150000000000000000000000000000.tlbin
+-rw-r--r-- 1 root root     9691 2009-01-01 08:00 07170000000000000000000000000000.drbin
+-rw-r--r-- 1 root root     9691 2009-01-01 08:00 07170000000000000000000000000000.tlbin
+-rw-r--r-- 1 root root    21171 2009-01-01 08:00 08030000000000000000000000000000.tabin
+-rw-r--r-- 1 root root    19955 2009-01-01 08:00 08040000000000000000000000003419.tabin
+-rw-r--r-- 1 root root    16539 2009-01-01 08:00 08050000000000000000000000003419.drbin
+-rw-r--r-- 1 root root    16539 2009-01-01 08:00 08050000000000000000000000003419.tlbin
+-rw-r--r-- 1 root root    71651 2009-01-01 08:00 08110000000000000000000000000000.tabin
+-rw-r--r-- 1 root root    16931 2009-01-01 08:00 40188311faf343488db888ad39496f9a.drbin
+-rw-r--r-- 1 root root    16931 2009-01-01 08:00 40188311faf343488db888ad39496f9a.tlbin
+-rw-r--r-- 1 root root    19435 2009-01-01 08:00 5020170115e016302017012521300000.drbin
+-rw-r--r-- 1 root root    19435 2009-01-01 08:00 5020170115e016302017012521300000.tlbin
+-rw-r--r-- 1 root root    37531 2009-01-01 08:00 abcd270ea5c44c58bcd3384a2fa2539e.tabin
+-rw-r--r-- 1 root root   412867 2009-01-01 08:00 e97c270ea5c44c58bcd3384a2fa2539e.tabin
+
+$ find keymint/trustonic files
+/mnt/vendor/persist/attest_keybox.so
+/mnt/vendor/persist/attestation_ids.so
+/system/apex/com.android.rkpd.apex
+/system/app/BookmarkProvider
+/system/app/BookmarkProvider/BookmarkProvider.apk
+/system/etc/public.libraries-trustonic.txt
+/system/framework/oat/arm64/apex@com.android.rkpd@javalib@service-rkp.jar@classes.odex
+/system/framework/oat/arm64/apex@com.android.rkpd@javalib@service-rkp.jar@classes.vdex
+/system/lib64/android.hardware.keymaster@3.0.so
+/system/lib64/android.hardware.keymaster@4.0.so
+/system/lib64/android.hardware.keymaster@4.1.so
+/system/lib64/android.hardware.security.keymint-V1-cpp.so
+/system/lib64/android.hardware.security.keymint-V1-ndk.so
+/system/lib64/android.hardware.security.keymint-V3-ndk.so
+/system/lib64/android.hardware.security.rkp-V3-ndk.so
+/system/lib64/lib_android_keymaster_keymint_utils.so
+/system/lib64/libcppcose_rkp.so
+/system/lib64/libkeymaster4_1support.so
+/system/lib64/libkeymaster4support.so
+/system/lib64/libkeymaster_messages.so
+/system/lib64/libkeymaster_portable.so
+/system/lib64/libkeymint.so
+/system/lib64/libkeymint_support.so
+/system/lib64/libkeystore-attestation-application-id.so
+/system/lib64/libpuresoftkeymasterdevice.so
+/system/lib64/librkp_support.so
+/system/lib64/libsoft_attestation_cert.so
+/system_ext/lib/libteeservice_client.trustonic.so
+/system_ext/lib64/libteeservice_client.trustonic.so
+/vendor/bin/hw/android.hardware.security.keymint@2.0-service.trustonic
+/vendor/bin/hw/vendor.trustonic.tee@1.1-service
+/vendor/etc/init/android.hardware.security.keymint@2.0-service.trustonic.rc
+/vendor/etc/init/trustonic.rc
+/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
+/vendor/etc/permissions/android.hardware.keystore.app_attest_key.prebuilt.xml
+/vendor/etc/permissions/android.software.device_id_attestation.prebuilt.xml
+/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
+/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
+/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
+/vendor/lib/hw/gatekeeper.trustonic.so
+/vendor/lib64/android.hardware.security.keymint-V1-ndk.so
+/vendor/lib64/hw/gatekeeper.trustonic.so
+/vendor/lib64/vendor.trustonic.tee.tui@1.0.so
+/vendor/lib64/vendor.trustonic.tee@1.0.so
+/vendor/lib64/vendor.trustonic.tee@1.1.so
+
+$ find mcRegistry drbin/tabin
+-rw------- 1 system system  3843072 2024-01-18 13:06 /mnt/vendor/persist/mcRegistry/Store_1.tf
+-rw------- 1 system system      372 2024-01-14 23:26 /mnt/vendor/persist/mcRegistry/failure_records.dat
+-rw-r--r-- 1 root   root      32483 2009-01-01 08:00 /vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
+-rw-r--r-- 1 root   root      32483 2009-01-01 08:00 /vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
+-rw-r--r-- 1 root   root      16043 2009-01-01 08:00 /vendor/app/mcRegistry/031c0000000000000000000000000000.drbin
+-rw-r--r-- 1 root   root      16043 2009-01-01 08:00 /vendor/app/mcRegistry/031c0000000000000000000000000000.tlbin
+-rw-r--r-- 1 root   root   10095955 2009-01-01 08:00 /vendor/app/mcRegistry/05060000000000000000000000000000.tabin
+-rw-r--r-- 1 root   root       7779 2009-01-01 08:00 /vendor/app/mcRegistry/05070000000000000000000000000000.drbin
+-rw-r--r-- 1 root   root       7779 2009-01-01 08:00 /vendor/app/mcRegistry/05070000000000000000000000000000.tlbin
+-rw-r--r-- 1 root   root      15315 2009-01-01 08:00 /vendor/app/mcRegistry/05120000000000000000000000000001.drbin
+-rw-r--r-- 1 root   root      15315 2009-01-01 08:00 /vendor/app/mcRegistry/05120000000000000000000000000001.tlbin
+-rw-r--r-- 1 root   root      15451 2009-01-01 08:00 /vendor/app/mcRegistry/06090000000000000000000000000000.drbin
+-rw-r--r-- 1 root   root      15451 2009-01-01 08:00 /vendor/app/mcRegistry/06090000000000000000000000000000.tlbin
+-rw-r--r-- 1 root   root     281651 2009-01-01 08:00 /vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin
+-rw-r--r-- 1 root   root      15331 2009-01-01 08:00 /vendor/app/mcRegistry/07061000000000000000000000000000.tlbin
+-rw-r--r-- 1 root   root      21075 2009-01-01 08:00 /vendor/app/mcRegistry/07150000000000000000000000000000.drbin
+-rw-r--r-- 1 root   root      21075 2009-01-01 08:00 /vendor/app/mcRegistry/07150000000000000000000000000000.tlbin
+-rw-r--r-- 1 root   root       9691 2009-01-01 08:00 /vendor/app/mcRegistry/07170000000000000000000000000000.drbin
+-rw-r--r-- 1 root   root       9691 2009-01-01 08:00 /vendor/app/mcRegistry/07170000000000000000000000000000.tlbin
+-rw-r--r-- 1 root   root      21171 2009-01-01 08:00 /vendor/app/mcRegistry/08030000000000000000000000000000.tabin
+-rw-r--r-- 1 root   root      19955 2009-01-01 08:00 /vendor/app/mcRegistry/08040000000000000000000000003419.tabin
+-rw-r--r-- 1 root   root      16539 2009-01-01 08:00 /vendor/app/mcRegistry/08050000000000000000000000003419.drbin
+-rw-r--r-- 1 root   root      16539 2009-01-01 08:00 /vendor/app/mcRegistry/08050000000000000000000000003419.tlbin
+-rw-r--r-- 1 root   root      71651 2009-01-01 08:00 /vendor/app/mcRegistry/08110000000000000000000000000000.tabin
+-rw-r--r-- 1 root   root      16931 2009-01-01 08:00 /vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin
+-rw-r--r-- 1 root   root      16931 2009-01-01 08:00 /vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.tlbin
+-rw-r--r-- 1 root   root      19435 2009-01-01 08:00 /vendor/app/mcRegistry/5020170115e016302017012521300000.drbin
+-rw-r--r-- 1 root   root      19435 2009-01-01 08:00 /vendor/app/mcRegistry/5020170115e016302017012521300000.tlbin
+-rw-r--r-- 1 root   root      37531 2009-01-01 08:00 /vendor/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin
+-rw-r--r-- 1 root   root     412867 2009-01-01 08:00 /vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin
+
+$ persist likely
+-rw-rw-r-- 1 root   system  296 2023-12-11 23:40 /mnt/vendor/persist/DRM_KBF_BIN
+-rw------- 1 system system 8716 2023-12-11 23:40 /mnt/vendor/persist/attest_keybox.so
+-rw------- 1 system system  892 2023-12-11 23:40 /mnt/vendor/persist/attestation_ids.so

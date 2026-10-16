@@ -1,0 +1,261 @@
+33521:   21c28: ff 83 18 d1  	sub	sp, sp, #1568
+33522-   21c2c: fd 7b 01 a9  	stp	x29, x30, [sp, #16]
+33523-   21c30: fd 43 00 91  	add	x29, sp, #16
+33524-   21c34: f3 53 02 a9  	stp	x19, x20, [sp, #32]
+33525-   21c38: 13 01 00 f0  	adrp	x19, 0x44000 <_binary_analysis_0706_text_bin_start+0x20cc4>
+33526-   21c3c: fb 73 06 a9  	stp	x27, x28, [sp, #96]
+33527-   21c40: fb 03 00 aa  	mov	x27, x0
+33528-   21c44: 61 66 41 f9  	ldr	x1, [x19, #712]
+33529-   21c48: f5 5b 03 a9  	stp	x21, x22, [sp, #48]
+33530-   21c4c: 16 d0 40 b8  	ldur	w22, [x0, #13]
+33531-   21c50: 75 13 41 b8  	ldur	w21, [x27, #17]
+33532-   21c54: f7 63 04 a9  	stp	x23, x24, [sp, #64]
+33533-   21c58: 18 30 40 39  	ldrb	w24, [x0, #12]
+33534-   21c5c: 20 00 40 f9  	ldr	x0, [x1]
+33535-   21c60: e0 0f 03 f9  	str	x0, [sp, #1560]
+33536-   21c64: 00 00 80 d2  	mov	x0, #0
+33537-   21c68: 74 53 41 b8  	ldur	w20, [x27, #21]
+33538-   21c6c: 77 93 41 b8  	ldur	w23, [x27, #25]
+33539-   21c70: e0 03 16 aa  	mov	x0, x22
+33540-   21c74: e1 03 15 2a  	mov	w1, w21
+33541-   21c78: ff 7f 17 29  	stp	wzr, wzr, [sp, #184]
+33542-   21c7c: ff 7f 0c a9  	stp	xzr, xzr, [sp, #192]
+33543-   21c80: ff 6f 00 f9  	str	xzr, [sp, #216]
+33544-   21c84: ff 7f 0e a9  	stp	xzr, xzr, [sp, #224]
+33545-   21c88: ff 7f 0f a9  	stp	xzr, xzr, [sp, #240]
+33546-   21c8c: ff 33 05 b9  	str	wzr, [sp, #1328]
+33547-   21c90: f8 b1 ff 97  	bl	0xe470 <_binary_analysis_0706_text_bin_start+0xd470>
+33548-   21c94: fc 03 00 2a  	mov	w28, w0
+33549-   21c98: 80 02 00 34  	cbz	w0, 0x21ce8 <_binary_analysis_0706_text_bin_start+0x20ce8>
+33550-   21c9c: e0 63 40 f9  	ldr	x0, [sp, #192]
+33551-   21ca0: ec d4 ff 97  	bl	0x17050 <_binary_analysis_0706_text_bin_start+0x16050>
+33552-   21ca4: e0 67 40 f9  	ldr	x0, [sp, #200]
+33553-   21ca8: ea d4 ff 97  	bl	0x17050 <_binary_analysis_0706_text_bin_start+0x16050>
+33554-   21cac: e0 6f 40 f9  	ldr	x0, [sp, #216]
+33555-   21cb0: e8 d4 ff 97  	bl	0x17050 <_binary_analysis_0706_text_bin_start+0x16050>
+33556-   21cb4: 73 66 41 f9  	ldr	x19, [x19, #712]
+33557-   21cb8: e1 0f 43 f9  	ldr	x1, [sp, #1560]
+33558-   21cbc: 60 02 40 f9  	ldr	x0, [x19]
+33559-   21cc0: 20 00 00 ca  	eor	x0, x1, x0
+33560-   21cc4: 20 1c 00 b5  	cbnz	x0, 0x22048 <_binary_analysis_0706_text_bin_start+0x21048>
+33561-   21cc8: e0 03 1c 2a  	mov	w0, w28
+33562-   21ccc: fd 7b 41 a9  	ldp	x29, x30, [sp, #16]
+33563-   21cd0: f3 53 42 a9  	ldp	x19, x20, [sp, #32]
+33564-   21cd4: f5 5b 43 a9  	ldp	x21, x22, [sp, #48]
+33565-   21cd8: f7 63 44 a9  	ldp	x23, x24, [sp, #64]
+33566-   21cdc: fb 73 46 a9  	ldp	x27, x28, [sp, #96]
+33567-   21ce0: ff 83 18 91  	add	sp, sp, #1568
+33568-   21ce4: c0 03 5f d6  	ret
+33569-   21ce8: f4 03 14 2a  	mov	w20, w20
+33570-   21cec: e1 03 17 2a  	mov	w1, w23
+33571-   21cf0: e0 03 14 aa  	mov	x0, x20
+33572-   21cf4: df b1 ff 97  	bl	0xe470 <_binary_analysis_0706_text_bin_start+0xd470>
+33573-   21cf8: fc 03 00 2a  	mov	w28, w0
+33574-   21cfc: 00 fd ff 35  	cbnz	w0, 0x21c9c <_binary_analysis_0706_text_bin_start+0x20c9c>
+33575-   21d00: e1 03 15 2a  	mov	w1, w21
+33576-   21d04: e0 03 03 91  	add	x0, sp, #192
+33577-   21d08: be d4 ff 97  	bl	0x17000 <_binary_analysis_0706_text_bin_start+0x16000>
+33578-   21d0c: fc 03 00 2a  	mov	w28, w0
+33579-   21d10: 60 fc ff 35  	cbnz	w0, 0x21c9c <_binary_analysis_0706_text_bin_start+0x20c9c>
+33580-   21d14: e1 03 17 2a  	mov	w1, w23
+33581-   21d18: e0 23 03 91  	add	x0, sp, #200
+33582-   21d1c: b9 d4 ff 97  	bl	0x17000 <_binary_analysis_0706_text_bin_start+0x16000>
+33583-   21d20: fc 03 00 2a  	mov	w28, w0
+33584-   21d24: c0 fb ff 35  	cbnz	w0, 0x21c9c <_binary_analysis_0706_text_bin_start+0x20c9c>
+33585-   21d28: 23 00 80 52  	mov	w3, #1
+33586-   21d2c: e0 d3 02 91  	add	x0, sp, #180
+33587-   21d30: e7 43 03 91  	add	x7, sp, #208
+33588-   21d34: e2 03 03 2a  	mov	w2, w3
+33589-   21d38: e0 03 00 f9  	str	x0, [sp]
+33590-   21d3c: 26 00 80 52  	mov	w6, #1
+33591-   21d40: 05 00 80 d2  	mov	x5, #0
+33592-   21d44: 04 00 80 d2  	mov	x4, #0
+33593-   21d48: f9 6b 05 a9  	stp	x25, x26, [sp, #80]
+33594-   21d4c: f9 e3 15 91  	add	x25, sp, #1400
+33595-   21d50: e0 03 19 aa  	mov	x0, x25
+33596-   21d54: 01 00 80 52  	mov	w1, #0
+33597-   21d58: 44 b2 ff 97  	bl	0xe668 <_binary_analysis_0706_text_bin_start+0xd668>
+33598-   21d5c: e1 82 00 51  	sub	w1, w23, #32
+33599-   21d60: e0 63 03 91  	add	x0, sp, #216
+33600-   21d64: e1 bb 00 b9  	str	w1, [sp, #184]
+33601-   21d68: a6 d4 ff 97  	bl	0x17000 <_binary_analysis_0706_text_bin_start+0x16000>
+33602-   21d6c: fc 03 00 2a  	mov	w28, w0
+33603-   21d70: 60 00 00 34  	cbz	w0, 0x21d7c <_binary_analysis_0706_text_bin_start+0x20d7c>
+33604-   21d74: f9 6b 45 a9  	ldp	x25, x26, [sp, #80]
+33605-   21d78: c9 ff ff 17  	b	0x21c9c <_binary_analysis_0706_text_bin_start+0x20c9c>
+33606-   21d7c: e5 1b 4d a9  	ldp	x5, x6, [sp, #208]
+33607-   21d80: e4 03 19 aa  	mov	x4, x25
+33608-   21d84: e3 b7 40 b9  	ldr	w3, [sp, #180]
+33609-   21d88: e7 e3 02 91  	add	x7, sp, #184
+33610-   21d8c: e1 c3 14 91  	add	x1, sp, #1328
+33611-   21d90: 82 00 80 52  	mov	w2, #4
+33612-   21d94: 00 20 80 52  	mov	w0, #256
+33613-   21d98: 36 95 ff 97  	bl	0x7270 <_binary_analysis_0706_text_bin_start+0x6270>
+33614-   21d9c: fc 03 00 2a  	mov	w28, w0
+33615-   21da0: a0 fe ff 35  	cbnz	w0, 0x21d74 <_binary_analysis_0706_text_bin_start+0x20d74>
+33616-   21da4: e0 6f 40 f9  	ldr	x0, [sp, #216]
+33617-   21da8: e1 43 02 91  	add	x1, sp, #144
+33618-   21dac: a2 02 00 f0  	adrp	x2, 0x78000 <_binary_analysis_0706_text_bin_start+0x20f08>
+33619-   21db0: e1 0b 07 a9  	stp	x1, x2, [sp, #112]
+33620-   21db4: f9 03 17 91  	add	x25, sp, #1472
+33621-   21db8: a8 d4 ff 97  	bl	0x17058 <_binary_analysis_0706_text_bin_start+0x16058>
+33622-   21dbc: e0 03 00 2a  	mov	w0, w0
+33623-   21dc0: fa 6f 40 f9  	ldr	x26, [sp, #216]
+33624-   21dc4: 00 10 00 91  	add	x0, x0, #4
+33625-   21dc8: 3c 00 80 52  	mov	w28, #1
+33626-   21dcc: 5a 03 00 8b  	add	x26, x26, x0
+33627-   21dd0: 40 33 00 91  	add	x0, x26, #12
+33628-   21dd4: a1 d4 ff 97  	bl	0x17058 <_binary_analysis_0706_text_bin_start+0x16058>
+33629-   21dd8: e2 03 00 2a  	mov	w2, w0
+33630-   21ddc: 40 53 00 91  	add	x0, x26, #20
+33631-   21de0: e2 7b 00 b9  	str	w2, [sp, #120]
+33632-   21de4: 5a 63 00 91  	add	x26, x26, #24
+33633-   21de8: 9c d4 ff 97  	bl	0x17058 <_binary_analysis_0706_text_bin_start+0x16058>
+33634-   21dec: e3 03 00 2a  	mov	w3, w0
+33635-   21df0: e2 7b 40 b9  	ldr	w2, [sp, #120]
+33636-   21df4: e0 03 19 aa  	mov	x0, x25
+33637-   21df8: e3 87 00 b9  	str	w3, [sp, #132]
+33638-   21dfc: 61 0a 80 d2  	mov	x1, #83
+33639-   21e00: e8 3b 40 f9  	ldr	x8, [sp, #112]
+33640-   21e04: e2 03 02 2a  	mov	w2, w2
+33641-   21e08: e3 63 40 f9  	ldr	x3, [sp, #192]
+33642-   21e0c: e2 3f 00 f9  	str	x2, [sp, #120]
+33643-   21e10: e3 47 00 f9  	str	x3, [sp, #136]
+33644-   21e14: 77 74 00 94  	bl	0x3eff0 <_binary_analysis_0706_text_bin_start+0x3dff0>
+33645-   21e18: ff 7f 12 a9  	stp	xzr, xzr, [sp, #288]
+33646-   21e1c: a2 02 00 f0  	adrp	x2, 0x78000 <_binary_analysis_0706_text_bin_start+0x20f78>
+33647-   21e20: e4 17 4a a9  	ldp	x4, x5, [sp, #160]
+33648-   21e24: 41 00 15 91  	add	x1, x2, #1344
+33649-   21e28: e2 3f 40 f9  	ldr	x2, [sp, #120]
+33650-   21e2c: a7 02 00 f0  	adrp	x7, 0x78000 <_binary_analysis_0706_text_bin_start+0x20f88>
+33651-   21e30: e3 87 40 b9  	ldr	w3, [sp, #132]
+33652-   21e34: e0 00 19 91  	add	x0, x7, #1600
+33653-   21e38: e4 17 11 a9  	stp	x4, x5, [sp, #272]
+33654-   21e3c: 45 03 02 8b  	add	x5, x26, x2
+33655-   21e40: 44 00 80 52  	mov	w4, #2
+33656-   21e44: ff 7f 15 a9  	stp	xzr, xzr, [sp, #336]
+33657-   21e48: e3 03 03 2a  	mov	w3, w3
+33658-   21e4c: 26 00 04 91  	add	x6, x1, #256
+33659-   21e50: ff 7f 16 a9  	stp	xzr, xzr, [sp, #352]
+33660-   21e54: ff 7f 17 a9  	stp	xzr, xzr, [sp, #368]
+33661-   21e58: e4 23 01 b9  	str	w4, [sp, #288]
+33662-   21e5c: ff 7f 14 a9  	stp	xzr, xzr, [sp, #320]
+33663-   21e60: e4 5b 01 b9  	str	w4, [sp, #344]
+33664-   21e64: e5 8f 16 a9  	stp	x5, x3, [sp, #360]
+33665-   21e68: e4 17 49 a9  	ldp	x4, x5, [sp, #144]
+33666-   21e6c: e1 20 03 f9  	str	x1, [x7, #1600]
+33667-   21e70: 01 98 00 a9  	stp	x1, x6, [x0, #8]
+33668-   21e74: e1 83 04 91  	add	x1, sp, #288
+33669-   21e78: e4 17 10 a9  	stp	x4, x5, [sp, #256]
+33670-   21e7c: e0 8f 00 f9  	str	x0, [sp, #280]
+33671-   21e80: ff 7f 13 a9  	stp	xzr, xzr, [sp, #304]
+33672-   21e84: fc 43 01 b9  	str	w28, [sp, #320]
+33673-   21e88: fa 8b 14 a9  	stp	x26, x2, [sp, #328]
+33674-   21e8c: c2 00 80 92  	mov	x2, #-7
+33675-   21e90: fa 03 04 91  	add	x26, sp, #256
+33676-   21e94: e2 97 00 f9  	str	x2, [sp, #296]
+33677-   21e98: e0 03 1a aa  	mov	x0, x26
+33678-   21e9c: ff 7f 18 a9  	stp	xzr, xzr, [sp, #384]
+33679-   21ea0: ff cb 00 f9  	str	xzr, [sp, #400]
+33680-   21ea4: 58 0a 00 34  	cbz	w24, 0x21fec <_binary_analysis_0706_text_bin_start+0x20fec>
+33681-   21ea8: fc 43 06 39  	strb	w28, [sp, #400]
+33682-   21eac: 5d 70 00 94  	bl	0x3e020 <_binary_analysis_0706_text_bin_start+0x3d020>
+33683-   21eb0: 60 0c 00 35  	cbnz	w0, 0x2203c <_binary_analysis_0706_text_bin_start+0x2103c>
+33684-   21eb4: e0 03 1a aa  	mov	x0, x26
+33685-   21eb8: 4a 74 00 94  	bl	0x3efe0 <_binary_analysis_0706_text_bin_start+0x3dfe0>
+33686-   21ebc: f8 03 00 aa  	mov	x24, x0
+33687-   21ec0: e0 83 18 91  	add	x0, sp, #1568
+33688-   21ec4: e2 e3 14 91  	add	x2, sp, #1336
+33689-   21ec8: 1f fc 31 a9  	stp	xzr, xzr, [x0, #-232]
+33690-   21ecc: 1f fc 32 a9  	stp	xzr, xzr, [x0, #-216]
+33691-   21ed0: e4 63 15 91  	add	x4, sp, #1368
+33692-   21ed4: e1 03 18 aa  	mov	x1, x24
+33693-   21ed8: e0 03 19 aa  	mov	x0, x25
+33694-   21edc: 03 00 80 52  	mov	w3, #0
+33695-   21ee0: e4 3f 00 f9  	str	x4, [sp, #120]
+33696-   21ee4: 31 f5 ff 97  	bl	0x1f3a8 <_binary_analysis_0706_text_bin_start+0x1e3a8>
+33697-   21ee8: fc 03 00 2a  	mov	w28, w0
+33698-   21eec: 40 f4 ff 35  	cbnz	w0, 0x21d74 <_binary_analysis_0706_text_bin_start+0x20d74>
+33699-   21ef0: e3 63 06 91  	add	x3, sp, #408
+33700-   21ef4: 02 73 80 d2  	mov	x2, #920
+33701-   21ef8: fc 03 03 aa  	mov	x28, x3
+33702-   21efc: e0 03 03 aa  	mov	x0, x3
+33703-   21f00: 01 00 80 52  	mov	w1, #0
+33704-   21f04: 0b 8d ff 97  	bl	0x5330 <_binary_analysis_0706_text_bin_start+0x4330>
+33705-   21f08: e8 13 47 a9  	ldp	x8, x4, [sp, #112]
+33706-   21f0c: e3 43 13 91  	add	x3, sp, #1232
+33707-   21f10: e0 47 40 f9  	ldr	x0, [sp, #136]
+33708-   21f14: 27 02 80 52  	mov	w7, #17
+33709-   21f18: 26 00 80 52  	mov	w6, #1
+33710-   21f1c: 02 04 80 d2  	mov	x2, #32
+33711-   21f20: a5 00 80 d2  	mov	x5, #5
+33712-   21f24: e1 03 15 2a  	mov	w1, w21
+33713-   21f28: 79 60 00 a9  	stp	x25, x24, [x3]
+33714-   21f2c: 64 08 02 a9  	stp	x4, x2, [x3, #32]
+33715-   21f30: e7 9b 01 b9  	str	w7, [sp, #408]
+33716-   21f34: e6 73 06 39  	strb	w6, [sp, #412]
+33717-   21f38: e5 0f 01 f9  	str	x5, [sp, #536]
+33718-   21f3c: 2d 74 00 94  	bl	0x3eff0 <_binary_analysis_0706_text_bin_start+0x3dff0>
+33719-   21f40: e6 1f 49 a9  	ldp	x6, x7, [sp, #144]
+33720-   21f44: a3 02 00 d0  	adrp	x3, 0x77000 <_binary_analysis_0706_text_bin_start+0x2109c>
+33721-   21f48: a0 02 00 d0  	adrp	x0, 0x77000 <_binary_analysis_0706_text_bin_start+0x210a0>
+33722-   21f4c: 04 00 15 91  	add	x4, x0, #1344
+33723-   21f50: 62 00 19 91  	add	x2, x3, #1600
+33724-   21f54: 64 20 03 f9  	str	x4, [x3, #1600]
+33725-   21f58: 83 00 04 91  	add	x3, x4, #256
+33726-   21f5c: e6 1f 10 a9  	stp	x6, x7, [sp, #256]
+33727-   21f60: e0 07 4a a9  	ldp	x0, x1, [sp, #160]
+33728-   21f64: e0 07 11 a9  	stp	x0, x1, [sp, #272]
+33729-   21f68: e1 03 1c aa  	mov	x1, x28
+33730-   21f6c: e0 03 1a aa  	mov	x0, x26
+33731-   21f70: 44 8c 00 a9  	stp	x4, x3, [x2, #8]
+33732-   21f74: e2 8f 00 f9  	str	x2, [sp, #280]
+33733-   21f78: 9a 6d 00 94  	bl	0x3d5e0 <_binary_analysis_0706_text_bin_start+0x3c5e0>
+33734-   21f7c: 00 06 00 35  	cbnz	w0, 0x2203c <_binary_analysis_0706_text_bin_start+0x2103c>
+33735-   21f80: e0 03 1a aa  	mov	x0, x26
+33736-   21f84: 17 74 00 94  	bl	0x3efe0 <_binary_analysis_0706_text_bin_start+0x3dfe0>
+33737-   21f88: e2 bb 40 b9  	ldr	w2, [sp, #184]
+33738-   21f8c: f5 03 00 aa  	mov	x21, x0
+33739-   21f90: e5 67 40 f9  	ldr	x5, [sp, #200]
+33740-   21f94: e6 f3 02 91  	add	x6, sp, #188
+33741-   21f98: e1 6f 40 f9  	ldr	x1, [sp, #216]
+33742-   21f9c: e4 c3 03 91  	add	x4, sp, #240
+33743-   21fa0: e3 83 03 91  	add	x3, sp, #224
+33744-   21fa4: 20 00 80 52  	mov	w0, #1
+33745-   21fa8: f7 bf 00 b9  	str	w23, [sp, #188]
+33746-   21fac: f7 d2 ff 97  	bl	0x16b88 <_binary_analysis_0706_text_bin_start+0x15b88>
+33747-   21fb0: fc 03 00 2a  	mov	w28, w0
+33748-   21fb4: 00 ee ff 35  	cbnz	w0, 0x21d74 <_binary_analysis_0706_text_bin_start+0x20d74>
+33749-   21fb8: e2 bf 40 b9  	ldr	w2, [sp, #188]
+33750-   21fbc: e0 03 14 aa  	mov	x0, x20
+33751-   21fc0: e1 67 40 f9  	ldr	x1, [sp, #200]
+33752-   21fc4: 4b 8c ff 97  	bl	0x50f0 <_binary_analysis_0706_text_bin_start+0x40f0>
+33753-   21fc8: e1 63 40 f9  	ldr	x1, [sp, #192]
+33754-   21fcc: e2 03 15 aa  	mov	x2, x21
+33755-   21fd0: e0 bf 40 b9  	ldr	w0, [sp, #188]
+33756-   21fd4: 60 93 01 b8  	stur	w0, [x27, #25]
+33757-   21fd8: e0 03 16 aa  	mov	x0, x22
+33758-   21fdc: 45 8c ff 97  	bl	0x50f0 <_binary_analysis_0706_text_bin_start+0x40f0>
+33759-   21fe0: f9 6b 45 a9  	ldp	x25, x26, [sp, #80]
+33760-   21fe4: 75 13 01 b8  	stur	w21, [x27, #17]
+33761-   21fe8: 2d ff ff 17  	b	0x21c9c <_binary_analysis_0706_text_bin_start+0x20c9c>
+33762-   21fec: 0d 70 00 94  	bl	0x3e020 <_binary_analysis_0706_text_bin_start+0x3d020>
+33763-   21ff0: 60 02 00 35  	cbnz	w0, 0x2203c <_binary_analysis_0706_text_bin_start+0x2103c>
+33764-   21ff4: e2 e3 14 91  	add	x2, sp, #1336
+33765-   21ff8: e0 03 1a aa  	mov	x0, x26
+33766-   21ffc: e2 3f 00 f9  	str	x2, [sp, #120]
+33767-   22000: f8 73 00 94  	bl	0x3efe0 <_binary_analysis_0706_text_bin_start+0x3dfe0>
+33768-   22004: f8 03 00 aa  	mov	x24, x0
+33769-   22008: e2 3f 40 f9  	ldr	x2, [sp, #120]
+33770-   2200c: e6 83 18 91  	add	x6, sp, #1568
+33771-   22010: e4 03 1c 2a  	mov	w4, w28
+33772-   22014: e0 00 00 d0  	adrp	x0, 0x40000 <_binary_analysis_0706_text_bin_start+0x2108c>
+33773-   22018: 05 00 80 52  	mov	w5, #0
+33774-   2201c: 00 60 2b 91  	add	x0, x0, #2776
+33775-   22020: 03 04 80 d2  	mov	x3, #32
+33776-   22024: c1 01 80 d2  	mov	x1, #14
+33777-   22028: df fc 31 a9  	stp	xzr, xzr, [x6, #-232]
+33778-   2202c: df fc 32 a9  	stp	xzr, xzr, [x6, #-216]
+33779-   22030: d0 01 00 94  	bl	0x22770 <_binary_analysis_0706_text_bin_start+0x21770>
+33780-   22034: e2 3f 40 f9  	ldr	x2, [sp, #120]
+33781-   22038: c0 f4 ff 34  	cbz	w0, 0x21ed0 <_binary_analysis_0706_text_bin_start+0x20ed0>

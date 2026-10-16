@@ -1,0 +1,8 @@
+
+===== 02_内核与权限 =====
+$ adb -s <DEVICE_SERIAL> shell uname -a; cat /proc/version; id; getenforce; cat /proc/cmdline
+Linux localhost 5.10.66-android12-9-00001-g41ff3fa8fff9-ab8171928 #1 SMP PREEMPT Mon Feb 7 06:19:48 UTC 2022 aarch64
+Linux version 5.10.66-android12-9-00001-g41ff3fa8fff9-ab8171928 (build-user@build-host) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), LLD 12.0.5 (/buildbot/src/android/llvm-toolchain/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)) #1 SMP PREEMPT Mon Feb 7 06:19:48 UTC 2022
+uid=2000(shell) gid=2000(shell) groups=2000(shell),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),1078(ext_data_rw),1079(ext_obb_rw),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid) context=u:r:shell:s0
+Enforcing
+cat: /proc/cmdline: Permission denied

@@ -1,0 +1,16 @@
+tl_path=/data/local/tmp/0706000000000000000000000000004d.dumpkeybox.tlbin
+tl=281651 keybox=8716 ids=892
+mcOpenDevice ret=0x0
+mcOpenTrustlet ret=0x0 sessionId=0x1101 deviceId=0x0
+[attest_keybox] mcMap ret=0x0 sVA=0x2008c0 sLen=0x220c len=8716
+[attest_keybox] mcNotify ret=0x0
+[attest_keybox] mcWait ret=0x0 tci_ret=0x0
+[attest_keybox] mcUnmap ret=0x0
+[attestation_ids] mcMap ret=0x0 sVA=0x200340 sLen=0x37c len=892
+[attestation_ids] mcNotify ret=0x0
+[attestation_ids] mcWait ret=0x0 tci_ret=0x0
+[attestation_ids] mcUnmap ret=0x0
+close cmd ret=0x0 tci_ret=0x0
+mcCloseSession ret=0x0
+mcCloseDevice ret=0x0
+DONE rc1=0 rc2=0

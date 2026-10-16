@@ -1,0 +1,17 @@
+{
+  "code_cave_va": "0x1366cc",
+  "diagnostic_private_blob_destroyed": true,
+  "elf_offset": "0x150",
+  "hook_va": "0x6236c",
+  "host_only_no_flash": true,
+  "output": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/02_\u811a\u672c\u4e0e\u8865\u4e01/duchamp_Mitee_BCC_seed\u8bca\u65adTA_20260828/dba51a17-0563-11e7-93b16fa7b0071a51.bcc_seed_diag.ta",
+  "patched_elf_sha256": "b42ebd5d3f4cc0292e55f5dcc299042443cb76a5e6d2e4448576a83899a1cbd9",
+  "patched_ta_sha256": "7a7f263468024412891a944e0c5d2b7741d4d2ab789f57ed26901adb5ac03e92",
+  "purpose": "authorized CTF BCC/UDS 32-byte seed diagnostic",
+  "return_va": "0x62370",
+  "secret_va": "0x158968",
+  "snippet_length": 36,
+  "source": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/01_\u8bbe\u5907\u8f93\u5165/duchamp_Mitee_TA\u4e0eKeyMint\u7528\u6237\u6001_20260828/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta",
+  "source_elf_sha256": "52c61b717dfe57316a6c4d66b4f3404af6b127f1e9c1b5fabddd44268b2844aa",
+  "source_ta_sha256": "facdfe3d8cb546acbbb4dc233b139a4dfd65f01e4791bbc26c474eb2eb0a3f32"
+}

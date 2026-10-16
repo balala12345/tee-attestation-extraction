@@ -1,0 +1,3 @@
+algorithm=EC
+insideSecureHardware=true
+securityLevel=1

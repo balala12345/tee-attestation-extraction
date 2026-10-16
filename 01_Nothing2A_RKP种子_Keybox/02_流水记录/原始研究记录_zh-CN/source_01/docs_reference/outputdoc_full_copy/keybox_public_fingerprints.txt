@@ -1,0 +1,64 @@
+# Extracted keybox public fingerprints
+
+## ec_cert_0
+subject= /title=TEE/serialNumber=325d90cd5049b6c519af32bc6a413526
+issuer= /title=TEE/serialNumber=aa3d661ed0862f74108b03a8dd8abb3e
+serial=<TARGET_SERIAL>
+notBefore=Oct 16 23:37:51 2023 GMT
+notAfter=Oct 13 23:37:51 2033 GMT
+SHA256 Fingerprint=B0:33:89:0B:EE:F5:B6:4E:A5:14:28:69:3C:60:58:87:69:F3:02:E0:30:AC:27:B2:F4:45:FE:52:9B:07:8F:CA
+sha256_file=b033890beef5b64ea51428693c60588769f302e030ac27b2f445fe529b078fca
+
+## ec_cert_1
+subject= /title=TEE/serialNumber=aa3d661ed0862f74108b03a8dd8abb3e
+issuer= /serialNumber=f92009e853b6b045
+serial=<TARGET_SERIAL>
+notBefore=Oct 16 23:34:36 2023 GMT
+notAfter=Oct 13 23:34:36 2033 GMT
+SHA256 Fingerprint=62:4D:1E:04:19:C8:80:58:1F:DF:C0:DD:E1:31:BD:4E:68:99:B7:E1:96:C4:9E:B5:EB:F3:6B:9A:64:AD:7F:BE
+sha256_file=624d1e0419c880581fdfc0dde131bd4e6899b7e196c49eb5ebf36b9a64ad7fbe
+
+## ec_cert_2
+subject= /serialNumber=f92009e853b6b045
+issuer= /serialNumber=f92009e853b6b045
+serial=<TARGET_SERIAL>
+notBefore=Mar 20 18:07:48 2022 GMT
+notAfter=Mar 15 18:07:48 2042 GMT
+SHA256 Fingerprint=CE:DB:1C:B6:DC:89:6A:E5:EC:79:73:48:BC:E9:28:67:53:C2:B3:8E:E7:1C:E0:FB:E3:4A:9A:12:48:80:0D:FC
+sha256_file=cedb1cb6dc896ae5ec797348bce9286753c2b38ee71ce0fbe34a9a1248800dfc
+
+## ec_private_pub_sha256
+11c57706dc0ec55c912de361742c7b5527a404ce6ed8fd32be8b6facc8b81b90  -
+
+## rsa_cert_0
+subject= /title=TEE/serialNumber=325d90cd5049b6c519af32bc6a413526
+issuer= /title=TEE/serialNumber=aa3d661ed0862f74108b03a8dd8abb3e
+serial=<TARGET_SERIAL>
+notBefore=Oct 16 23:37:50 2023 GMT
+notAfter=Oct 13 23:37:50 2033 GMT
+SHA256 Fingerprint=45:C1:C2:41:1F:F0:98:DA:B6:1C:18:F0:93:4F:A3:8A:C2:B9:89:50:DC:B8:57:E6:52:B2:9A:81:58:90:D5:C2
+sha256_file=45c1c2411ff098dab61c18f0934fa38ac2b98950dcb857e652b29a815890d5c2
+
+## rsa_cert_1
+subject= /title=TEE/serialNumber=aa3d661ed0862f74108b03a8dd8abb3e
+issuer= /serialNumber=f92009e853b6b045
+serial=<TARGET_SERIAL>
+notBefore=Oct 16 23:34:18 2023 GMT
+notAfter=Oct 13 23:34:18 2033 GMT
+SHA256 Fingerprint=13:A0:F8:A9:E6:0F:C8:8B:CC:C8:61:5B:A8:45:31:3C:03:05:1A:87:C4:F2:9E:38:5F:CC:F7:F1:3E:39:32:7E
+sha256_file=13a0f8a9e60fc88bccc8615ba845313c03051a87c4f29e385fccf7f13e39327e
+
+## rsa_cert_2
+subject= /serialNumber=f92009e853b6b045
+issuer= /serialNumber=f92009e853b6b045
+serial=<TARGET_SERIAL>
+notBefore=Mar 20 18:07:48 2022 GMT
+notAfter=Mar 15 18:07:48 2042 GMT
+SHA256 Fingerprint=CE:DB:1C:B6:DC:89:6A:E5:EC:79:73:48:BC:E9:28:67:53:C2:B3:8E:E7:1C:E0:FB:E3:4A:9A:12:48:80:0D:FC
+sha256_file=cedb1cb6dc896ae5ec797348bce9286753c2b38ee71ce0fbe34a9a1248800dfc
+
+## rsa_private_pub_sha256
+f950a598e25c83a1f4025225b4100e47b2dc9078a7d3f2dd3606882f07f00a2f  -
+
+## keybox_xml_sha256
+665b36bc8469e259aaaffe77069460f5dd3e3a74ac9cfa7a132163c8f95b8658  extracted_keybox/keybox.xml

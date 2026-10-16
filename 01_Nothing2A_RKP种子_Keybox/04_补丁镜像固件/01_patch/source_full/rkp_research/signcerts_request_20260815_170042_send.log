@@ -1,0 +1,339 @@
+{
+  "csr_run": "<PROJECT_ROOT>/rkp_research/direct_csr_matrix_20260815_165522/curve2_test1",
+  "raw_dir": "<PROJECT_ROOT>/rkp_research/direct_csr_matrix_20260815_165522/curve2_test1/raw",
+  "geek_dir": "<PROJECT_ROOT>/rkp_research/geek_fetch_20260815_165246",
+  "fingerprint": "Nothing/PacmanEEA/Pacman:14/UP1A.231005.007/2401142323:user/release-keys",
+  "challenge_len": 29,
+  "challenge_hex": "000001a004a00f110120b4ad63366e1305a462e80d10513a72cad68871",
+  "cose_key_len": 83,
+  "cose_key_sha256": "060cbb1cc6ba72862884421471bc2866503b2f94aa1025298a90dc13f9c12a86",
+  "public_xy_sha256": "206050ad33d74793f09572b491945b47f893d1d2db149b89e103aa0a196585e3",
+  "private_scalar_sha256": "7768175dfb6af937c841413fdf526610a2821eccf75cb4c71a33d1ab149c28fa",
+  "sideleak_object_sha256": "b80146bce6830fc4a110874593bee74fa020ae1e5161ed3ae57e8744e2f1f874",
+  "scalar_matches_public": true,
+  "maced_keys_to_sign_len": 126,
+  "certificate_request_len": 877,
+  "artifacts": {
+    "certificate_request": "<PROJECT_ROOT>/rkp_research/signcerts_request_20260815_170042_send/certificate_request.cbor",
+    "maced_keys_to_sign": "<PROJECT_ROOT>/rkp_research/signcerts_request_20260815_170042_send/maced_keys_to_sign.cbor",
+    "cose_key": "<PROJECT_ROOT>/rkp_research/signcerts_request_20260815_170042_send/cose_key_0.cbor",
+    "private_scalar": "<PROJECT_ROOT>/rkp_research/signcerts_request_20260815_170042_send/private_scalar.bin",
+    "private_key_pkcs8_pem": "<PROJECT_ROOT>/rkp_research/signcerts_request_20260815_170042_send/ec_private_key_pkcs8.pem",
+    "private_key_sec1_pem": "<PROJECT_ROOT>/rkp_research/signcerts_request_20260815_170042_send/ec_private_key_sec1.pem"
+  },
+  "cbor_summary": {
+    "certificate_request": {
+      "type": "array",
+      "len": 4,
+      "items": [
+        {
+          "type": "array",
+          "len": 2,
+          "items": [
+            {
+              "type": "map",
+              "len": 10,
+              "items": [
+                [
+                  {
+                    "type": "text",
+                    "value": "fused"
+                  },
+                  {
+                    "type": "uint",
+                    "value": 1
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "value": "version"
+                  },
+                  {
+                    "type": "uint",
+                    "value": 2
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "value": "vb_state"
+                  },
+                  {
+                    "type": "text",
+                    "value": "orange"
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "value": "os_version"
+                  },
+                  {
+                    "type": "text",
+                    "value": "13"
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "value": "vbmeta_digest"
+                  },
+                  {
+                    "type": "bstr",
+                    "len": 32,
+                    "hex_prefix": "d3caac3bf910025bdf5cd56f0a492907"
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "value": "security_level"
+                  },
+                  {
+                    "type": "text",
+                    "value": "tee"
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "value": "boot_patch_level"
+                  },
+                  {
+                    "type": "uint",
+                    "value": 0
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "value": "bootloader_state"
+                  },
+                  {
+                    "type": "text",
+                    "value": "unlocked"
+                  }
+                ]
+              ]
+            },
+            {
+              "type": "map",
+              "len": 1,
+              "items": [
+                [
+                  {
+                    "type": "text",
+                    "value": "fingerprint"
+                  },
+                  {
+                    "type": "text",
+                    "value": "Nothing/PacmanEEA/Pacman:14/UP1A.231005.007/2401142323:user/release-keys"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "bstr",
+          "len": 29,
+          "hex_prefix": "000001a004a00f110120b4ad63366e13"
+        },
+        {
+          "type": "tag",
+          "tag": 96,
+          "value": {
+            "type": "array",
+            "len": 4,
+            "items": [
+              {
+                "type": "bstr",
+                "len": 3,
+                "hex_prefix": "a10103"
+              },
+              {
+                "type": "map",
+                "len": 1,
+                "items": [
+                  [
+                    {
+                      "type": "uint",
+                      "value": 5
+                    },
+                    {
+                      "type": "bstr",
+                      "len": 12,
+                      "hex_prefix": "1964e1809ba30830e91fb942"
+                    }
+                  ]
+                ]
+              },
+              {
+                "type": "bstr",
+                "len": 323,
+                "hex_prefix": "86d35082380b513fb3bbfbed3e89f9cd"
+              },
+              {
+                "type": "array",
+                "len": 1,
+                "items": [
+                  {
+                    "type": "array",
+                    "len": 3,
+                    "items": [
+                      {
+                        "type": "bstr",
+                        "len": 4,
+                        "hex_prefix": "a1013818"
+                      },
+                      {
+                        "type": "map",
+                        "len": 2,
+                        "items": [
+                          [
+                            {
+                              "type": "nint",
+                              "value": -1
+                            },
+                            {
+                              "type": "map",
+                              "len": 3,
+                              "items": [
+                                [
+                                  {
+                                    "type": "uint",
+                                    "value": 1
+                                  },
+                                  {
+                                    "type": "uint",
+                                    "value": 1
+                                  }
+                                ],
+                                [
+                                  {
+                                    "type": "nint",
+                                    "value": -1
+                                  },
+                                  {
+                                    "type": "uint",
+                                    "value": 4
+                                  }
+                                ],
+                                [
+                                  {
+                                    "type": "nint",
+                                    "value": -2
+                                  },
+                                  {
+                                    "type": "bstr",
+                                    "len": 32,
+                                    "hex_prefix": "567a10a2060dcd3f566083d5af475666"
+                                  }
+                                ]
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "type": "uint",
+                              "value": 4
+                            },
+                            {
+                              "type": "bstr",
+                              "len": 32,
+                              "hex_prefix": "d0aec115ca2acf73ae6bcccbd1961d65"
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "type": "simple",
+                        "value": null
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "array",
+          "len": 4,
+          "items": [
+            {
+              "type": "bstr",
+              "len": 3,
+              "hex_prefix": "a10105"
+            },
+            {
+              "type": "map",
+              "len": 0,
+              "items": []
+            },
+            {
+              "type": "bstr",
+              "len": 84,
+              "hex_prefix": "81a6010203262001215820fcb9d4104d"
+            },
+            {
+              "type": "bstr",
+              "len": 32,
+              "hex_prefix": "b6f672252058e7d89665d6b9d33a5257"
+            }
+          ]
+        }
+      ]
+    },
+    "maced_keys_to_sign": {
+      "type": "array",
+      "len": 4,
+      "items": [
+        {
+          "type": "bstr",
+          "len": 3,
+          "hex_prefix": "a10105"
+        },
+        {
+          "type": "map",
+          "len": 0,
+          "items": []
+        },
+        {
+          "type": "bstr",
+          "len": 84,
+          "hex_prefix": "81a6010203262001215820fcb9d4104d"
+        },
+        {
+          "type": "bstr",
+          "len": 32,
+          "hex_prefix": "b6f672252058e7d89665d6b9d33a5257"
+        }
+      ]
+    }
+  },
+  "request_id": "3e3e9f87-52a2-4ba5-8260-2f78287d0b8f",
+  "host": "remoteprovisioning.googleapis.com",
+  "http": {
+    "url": "https://remoteprovisioning.googleapis.com/v1:signCertificates?challenge=AAABoASgDxEBILStYzZuEwWkYugNEFE6csrWiHE=&request_id=3e3e9f87-52a2-4ba5-8260-2f78287d0b8f",
+    "status": 400,
+    "reason": "Bad Request",
+    "headers": {
+      "Vary": "Origin",
+      "Content-Type": "application/json; charset=UTF-8",
+      "Date": "Sat, 15 Aug 2026 09:00:43 GMT",
+      "Server": "ESF",
+      "Content-Length": "198",
+      "X-XSS-Protection": "0",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-Content-Type-Options": "nosniff",
+      "Server-Timing": "gfet4t7; dur=39",
+      "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+      "Connection": "close"
+    },
+    "response_len": 198,
+    "error_body_prefix_hex": "7b0a2020226572726f72223a207b0a2020202022636f6465223a203430302c0a20202020226d657373616765223a2022496e76616c6964207265717565737420"
+  }
+}
+<PROJECT_ROOT>/rkp_research/signcerts_request_20260815_170042_send

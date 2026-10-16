@@ -1,0 +1,84 @@
+{
+  "scope": "Redmi Note 11T Pro / xaga / V13.0.5.0.SLOMIXM exact artifacts only",
+  "safety": [
+    "Keybox TA 只开放原有读取命令 0x64；写入命令 0/0x65/0x66 未修改",
+    "TEE 补丁只忽略第三方 TA 验签返回值；TA 解析与 AES 解包流程不变",
+    "所有输入均有精确 SHA256 与原始指令双重门禁"
+  ],
+  "inputs": {
+    "tee": {
+      "path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/02_共用工程/01_固件输入/firmware_only_extracted/firmware-update/tee.img",
+      "size": 3489792,
+      "sha256": "48edc850fcbd9f8289b813d032a0eb04ec20c049ff78f868b360b108c8295dbc"
+    },
+    "secmanager": {
+      "path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/02_共用工程/04_分析产物/TEE_L4Re模块/070_uTsecManager",
+      "size": 195056,
+      "sha256": "d31eaa65c305201b1f920cff05770ff9a411ee1826e07c5e6db0beeeb30e9b38"
+    },
+    "keybox_ta": {
+      "path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/03_第一阶段_Keybox/01_设备输入/原厂TA全集_实机_20260826/ta/d91f322ad5a441d5955110eda3272fc0.ta",
+      "size": 15233,
+      "sha256": "0fafcb889813891dca764f36627691a839345105d8dcbb7fbdc82d9178f0e52f"
+    }
+  },
+  "keybox": {
+    "patch": {
+      "component": "d91f322ad5a441d5955110eda3272fc0 Keybox TA",
+      "virtual_address": "0x0040109c",
+      "file_offset": "0x109c",
+      "before_hex": "e008417a",
+      "after_hex": "1f2003d5",
+      "meaning": "保留 command=0x64 与 paramTypes=0x662 校验，仅取消 caller_mode==1 限制"
+    },
+    "enc_ta": {
+      "trailer_offset": "0x39a8",
+      "trailer_size": 473,
+      "aes_bits": 128,
+      "aes_key_hex": "235ac0201a071eda875c0cf33d746b00",
+      "aes_iv_hex": "d111cedd59fd5bf30000000000000000"
+    }
+  },
+  "tee": {
+    "patch": {
+      "component": "uTsecManager",
+      "virtual_address": "0x0040f218",
+      "file_offset": "0xf218",
+      "before_hex": "20220035",
+      "after_hex": "1f2003d5",
+      "meaning": "忽略 verify_ta 非零结果，之后仍执行原有 AES-CTR 解包流程"
+    },
+    "module": {
+      "descriptor_offset": "0x7213d",
+      "data_offset": "0x329670",
+      "allocation_capacity": 90112,
+      "original_stored_size": 87233,
+      "patched_stored_size": 87635,
+      "unpacked_size": 195056,
+      "patched_stored_md5": "43beca97e05dc1dbb0910b0bc6ad9ea0",
+      "patched_unpacked_md5": "94ae062d44bd3951e6425649b0e61313"
+    }
+  },
+  "outputs": {
+    "keybox_plaintext": {
+      "path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/03_第一阶段_Keybox/02_脚本与补丁/只读Keybox补丁_20260826/d91f322ad5a441d5955110eda3272fc0_caller_gate_nop_明文.elf",
+      "size": 14760,
+      "sha256": "26589cbb8d4e1a235a5e84ed889003447f72b03174f696afe4e9500688f99300"
+    },
+    "keybox_encrypted": {
+      "path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/03_第一阶段_Keybox/02_脚本与补丁/只读Keybox补丁_20260826/d91f322ad5a441d5955110eda3272fc0_caller_gate_nop.ta",
+      "size": 15233,
+      "sha256": "97e1c1b34d8da376df44f820fc32cdff6e9fac312a0d603d99116aebd572b2f5"
+    },
+    "secmanager": {
+      "path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/03_第一阶段_Keybox/02_脚本与补丁/只读Keybox补丁_20260826/uTsecManager_verify_result_nop",
+      "size": 195056,
+      "sha256": "fa7e141914b7a9c51ff120f382b6aa3328e0c332b9033f27eeb5bef7a636828c"
+    },
+    "tee": {
+      "path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/03_第一阶段_Keybox/02_脚本与补丁/只读Keybox补丁_20260826/tee_xaga_V13.0.5.0_Keybox只读验证旁路.img",
+      "size": 3489792,
+      "sha256": "71f3a80fdefdd9363dd12c33e7606fc9021bc3d9769ccdc51c1c0c9d45f094a9"
+    }
+  }
+}

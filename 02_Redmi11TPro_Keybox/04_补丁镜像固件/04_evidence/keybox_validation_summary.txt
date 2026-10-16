@@ -1,0 +1,9 @@
+status=PASS
+payload_length=8578
+descriptor_length=168
+ec_certificate_count=3
+rsa_certificate_count=3
+private_key_leaf_spki_match=PASS
+ec_chain_verify=PASS
+rsa_chain_verify=PASS
+raw_private_key_and_payload=OMITTED_FROM_SANITIZED_COPY

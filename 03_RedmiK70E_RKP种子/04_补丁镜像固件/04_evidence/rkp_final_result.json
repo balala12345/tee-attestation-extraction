@@ -1,0 +1,28 @@
+{
+  "all_certificates_valid_now": true,
+  "certificate_chain_count": 1,
+  "certificate_count": 4,
+  "completed_at": "2026-09-06T12:00:00.686202+00:00",
+  "ctf_no_not_approved": true,
+  "leaf_not_after": "2026-09-16T14:47:51+00:00",
+  "leaf_not_before": "2026-09-04T12:00:30+00:00",
+  "leaf_sha256": "b05b883c7777a4cd7449aff3b5faeadb9d5c706c13beefe966f6cf01790ab180",
+  "leaf_validity_seconds": 1046841,
+  "network_calls_observed": [
+    "fetch_eek",
+    "sign_certificates"
+  ],
+  "not_approved_hit_count": 0,
+  "private_material_printed": false,
+  "provisioning_count_key_1": 32,
+  "provisioning_info_parse_error_count": 0,
+  "request_sha256": "f0c1208abd682702ea7de9fd19223d267c26ef8c2b7517f73b291b8750fc9303",
+  "root_der_sha256": "6d9db4ce6c5c0b293166d08986e05774a8776ceb525d9e4329520de12ba4bcc0",
+  "root_matches_pinned_google_root": true,
+  "root_self_signature_valid": true,
+  "root_spki_sha256": "3ee44512a1af2beb39c889490c60ea3f82e43f5d5a5532f5ab9419f676cd07ec",
+  "signature_links_valid": true,
+  "software_key_spki_sha256": "1e5ec6f483c8fb632305a7aa4e2b0be4a1a2fa4aca0c38408a932b3d5a84bc67",
+  "software_private_spki_equals_leaf_spki": true,
+  "status": "PASS_CLEAN"
+}

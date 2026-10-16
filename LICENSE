@@ -1,0 +1,25 @@
+# Licensing policy
+
+This repository uses a split noncommercial licensing policy.
+
+## Original scripts and tools
+
+Original scripts, parsers, builders, and other software created for this repository are licensed under the [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0).
+
+This permits noncommercial research, experiment, testing, modification, and redistribution, subject to the license terms. Commercial use is not permitted. The license provides an as-is and no-liability clause to the maximum extent allowed by law.
+
+## Original documentation and diagrams
+
+Original Markdown documentation, tutorials, principles documents, practice ledgers, diagrams, and other non-software creative works are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+
+Attribution is required. Commercial use is not permitted. The license includes warranty and liability limitations to the maximum extent allowed by applicable law.
+
+## Third-party materials
+
+Third-party patches, images, firmware packages, tools, source code, libraries, trademarks, and other materials retain their original licenses, copyrights, and NOTICE files. No third-party material is relicensed by this repository. When a file contains its own license notice, that notice controls.
+
+## No warranty and research boundary
+
+The repository is provided for authorized research, review, and noncommercial testing. It is provided as-is and as-available. No warranty is made about accuracy, completeness, safety, fitness, or continued availability. To the maximum extent permitted by law, the releasing party and contributors are not liable for losses arising from use, modification, execution, flashing, testing, redistribution, or reliance on the repository.
+
+If applicable law does not permit a particular disclaimer or limitation, that part applies only to the maximum extent permitted. Nothing in this file grants permission to use third-party material or to operate a device without authorization.

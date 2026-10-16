@@ -1,0 +1,20 @@
+
+===== 08_TEE设备与目录 =====
+$ adb -s <DEVICE_SERIAL> shell ls -la /dev/isee_tee* /dev/teei* /dev/ut_keymaster 2>&1; find /data/vendor/thh /vendor /odm -maxdepth 5 -type f 2>/dev/null | grep -Ei 'keym|beanpod|tee|thh|soter|\.ta$|trust|provision'
+crw-rw-rw- 1 system drmrpc 502,   0 2026-08-26 18:31 /dev/isee_tee0
+crw-rw---- 1 system system 504,   0 2026-08-26 18:31 /dev/teei_client
+crw-rw---- 1 system system 499,   0 2026-08-26 18:31 /dev/teei_config
+crw-rw---- 1 system root   500,   0 2026-08-26 18:31 /dev/teei_fp
+crw-rw---- 1 system drmrpc 501,   0 2026-08-26 18:31 /dev/ut_keymaster
+/vendor/app/SoterService/SoterService.apk
+/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
+/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
+/vendor/etc/init/microtrust.rc
+/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+/vendor/etc/init/vendor.microtrust.hardware.se@1.0-service.rc
+/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
+/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
+/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml
+/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml
+/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.beanpod.xml
+/vendor/etc/vintf/manifest/manifest.microtrust.xml

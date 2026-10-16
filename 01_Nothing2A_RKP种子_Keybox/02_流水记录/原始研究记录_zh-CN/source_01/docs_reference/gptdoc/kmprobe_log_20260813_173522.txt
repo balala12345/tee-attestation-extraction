@@ -1,0 +1,60 @@
+01-15 06:26:12.071  9987 10009 I KMPROBE : start sdk=34 model=A142 fingerprint=Nothing/PacmanEEA/Pacman:14/UP1A.231005.007/2401142323:user/release-keys
+01-15 06:26:12.077  9987 10009 I KMPROBE : outDir=/storage/emulated/0/Android/data/com.pwn.kmprobe/files
+01-15 06:26:12.081  9987 10009 I KMPROBE : wrote /storage/emulated/0/Android/data/com.pwn.kmprobe/files/challenge.txt len=21
+01-15 06:26:12.081  9987 10009 I KMPROBE : generateEc
+01-15 06:26:12.085  1559  3430 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+01-15 06:26:12.087  1559  3430 D ActivityManager: sync unfroze 4681 com.android.rkpdapp for 6
+01-15 06:26:12.089  1559  1559 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+01-15 06:26:12.115     0     0 I [T300404] servicemanager: Found android.hardware.security.keymint.IRemotelyProvisionedComponent/default in device VINTF manifest.
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: com.android.rkpdapp.RkpdException: Error getting data from server.
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.interfaces.ServerInterface.makeNetworkError(ServerInterface.java:196)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.interfaces.ServerInterface.connectAndGetData(ServerInterface.java:317)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.interfaces.ServerInterface.fetchGeek(ServerInterface.java:166)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.interfaces.ServerInterface.fetchGeekAndUpdate(ServerInterface.java:207)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.service.RegistrationBinder.fetchGeekAndProvisionKeys(RegistrationBinder.java:144)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.service.RegistrationBinder.getKeyWorker(RegistrationBinder.java:117)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.service.RegistrationBinder.getKeyThreadWorker(RegistrationBinder.java:235)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.service.RegistrationBinder.lambda$getKey$3(RegistrationBinder.java:223)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.service.RegistrationBinder.$r8$lambda$TliFA5y2_wUzHwCyn77kum7XL5E(RegistrationBinder.java:0)
+01-15 06:26:12.092  4681  4810 E RkpdRegistrationBinder: 	at com.android.rkpdapp.service.RegistrationBinder$$ExternalSyntheticLambda9.run(R8$$SyntheticClass:0)
+01-15 06:26:12.093   584   584 E keystore2: system/security/keystore2/src/rkpd_client.rs:172 - IGetKeyCallback failed: ERROR_PENDING_INTERNET_CONNECTIVITY: Error getting data from server.
+01-15 06:26:12.093   584   584 E keystore2: system/security/keystore2/src/rkpd_client.rs:63 - SafeSender::send() failed
+01-15 06:26:12.094  4681  4813 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10221, callback: 182720279
+01-15 06:26:12.098  1559  3412 D NtAmDebugConfig: checkNtSkipFreezing app=com.android.rkpdapp focused=com.android.systemui
+01-15 06:26:12.584   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:114 - ### Keystore Watchdog report - BEGIN ###
+01-15 06:26:12.584   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:123 - When extracting from a bug report, please include this header
+01-15 06:26:12.584   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:124 - and all 1 records below.
+01-15 06:26:12.584   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:164 - ThreadId(4) Calling get_rkpd_attestation_key() Pending: 500.257539ms Overdue 259.077µs
+01-15 06:26:12.584   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:175 - ### Keystore Watchdog report - END ###
+01-15 06:26:13.584   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:114 - ### Keystore Watchdog report - BEGIN ###
+01-15 06:26:13.584   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:123 - When extracting from a bug report, please include this header
+01-15 06:26:13.584   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:124 - and all 1 records below.
+01-15 06:26:13.585   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:164 - ThreadId(4) Calling get_rkpd_attestation_key() Pending: 1.500838693s Overdue 1.000840693s
+01-15 06:26:13.585   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:175 - ### Keystore Watchdog report - END ###
+01-15 06:26:14.585   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:114 - ### Keystore Watchdog report - BEGIN ###
+01-15 06:26:14.585   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:123 - When extracting from a bug report, please include this header
+01-15 06:26:14.586   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:124 - and all 1 records below.
+01-15 06:26:14.586   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:164 - ThreadId(4) Calling get_rkpd_attestation_key() Pending: 2.501926693s Overdue 2.001928616s
+01-15 06:26:14.586   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:175 - ### Keystore Watchdog report - END ###
+01-15 06:26:15.586   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:114 - ### Keystore Watchdog report - BEGIN ###
+01-15 06:26:15.586   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:123 - When extracting from a bug report, please include this header
+01-15 06:26:15.586   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:124 - and all 1 records below.
+01-15 06:26:15.586   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:164 - ThreadId(4) Calling get_rkpd_attestation_key() Pending: 3.502736539s Overdue 3.002738462s
+01-15 06:26:15.586   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:175 - ### Keystore Watchdog report - END ###
+01-15 06:26:16.587   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:114 - ### Keystore Watchdog report - BEGIN ###
+01-15 06:26:16.588   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:123 - When extracting from a bug report, please include this header
+01-15 06:26:16.588   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:124 - and all 1 records below.
+01-15 06:26:16.588   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:164 - ThreadId(4) Calling get_rkpd_attestation_key() Pending: 4.504034693s Overdue 4.004036616s
+01-15 06:26:16.588   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:175 - ### Keystore Watchdog report - END ###
+01-15 06:26:18.084   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:114 - ### Keystore Watchdog report - BEGIN ###
+01-15 06:26:18.084   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:123 - When extracting from a bug report, please include this header
+01-15 06:26:18.084   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:124 - and all 2 records below.
+01-15 06:26:18.084   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:154 - ThreadId(4) IKeystoreSecurityLevel::generateKey Pending: 6.001084s Overdue 1.001086077s: SecurityLevel r#TRUSTED_ENVIRONMENT
+01-15 06:26:18.084   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:164 - ThreadId(4) Calling get_rkpd_attestation_key() Pending: 6.000713231s Overdue 5.500715078s
+01-15 06:26:18.084   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:175 - ### Keystore Watchdog report - END ###
+01-15 06:26:19.085   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:114 - ### Keystore Watchdog report - BEGIN ###
+01-15 06:26:19.085   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:123 - When extracting from a bug report, please include this header
+01-15 06:26:19.085   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:124 - and all 2 records below.
+01-15 06:26:19.085   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:154 - ThreadId(4) IKeystoreSecurityLevel::generateKey Pending: 7.002014154s Overdue 2.002016001s: SecurityLevel r#TRUSTED_ENVIRONMENT
+01-15 06:26:19.085   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:164 - ThreadId(4) Calling get_rkpd_attestation_key() Pending: 7.001642693s Overdue 6.501644385s
+01-15 06:26:19.085   584  9976 W keystore2: system/security/keystore2/src/watchdog.rs:175 - ### Keystore Watchdog report - END ###

@@ -1,0 +1,51 @@
+{
+  "input": {
+    "secmanager_path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/02_共用工程/04_分析产物/TEE_L4Re模块/070_uTsecManager",
+    "secmanager_size": 195056,
+    "secmanager_sha256": "d31eaa65c305201b1f920cff05770ff9a411ee1826e07c5e6db0beeeb30e9b38",
+    "encrypted_ta_path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/03_第一阶段_Keybox/02_脚本与补丁/只读Keybox补丁_20260826/d91f322ad5a441d5955110eda3272fc0_caller_gate_nop.ta",
+    "encrypted_ta_size": 15233,
+    "encrypted_ta_sha256": "97e1c1b34d8da376df44f820fc32cdff6e9fac312a0d603d99116aebd572b2f5"
+  },
+  "enc_ta": {
+    "magic": "ENC-TA\u0000\u0000",
+    "trailer_offset": 14760,
+    "trailer_size": 473,
+    "payload_size": 14760,
+    "header_crc32": "09e447a8"
+  },
+  "embedded_rsa": {
+    "marker_file_offset": 192320,
+    "parameter_base_file_offset": 192352,
+    "bits": 1024,
+    "public_exponent": 65537,
+    "p_hex": "e0401953f79ed8ee8eb81daa6912c31dde85786228ffb3860d6b4d0ccff930027b824eeb1f1300d2ea63687d5f68f160790672b6fd7ed1f5314edf664eb2e5fd",
+    "q_hex": "c44f6eabbc244223a868f40c46f6096b387a5494b81e1ea2f408b6b5f28005f230fb9cd32d414d7d93ae4b312b9b4a2688267a10f8faa30b45d5e8d88ad3dcc5",
+    "n_hex": "abf6a81e1500dd253bad009cd0af60daca3d04a77140763c764ffb13642e556e16b9852e4134be5a3c08bd212d26e304a987e59eb231156e976d74c10ea08cf0cf5aae95f2508612b1134e08ef8f40c03203b010bbb53ffc9178b67662fa6da43a5f72d002f9379de470817ad0e10432cbb75299cc3b51d8154d78423ed767b1",
+    "dp_hex": "a9bfbbac74efb8547492685a5ba9492b6e0ae8829d7859a3aabac39b643ec399cd766958cfafe9dabe743b5f53feb3608c9c55efb0d9f402bfad6dac1afc8edd",
+    "dq_hex": "3e9c2ee9eaf98d769df1cb545715856f82f5d1201590d5a89738683da3781d6d5f1e00a8819880447ae36debe2c28665bfaab5e7cfe0f03b5a2c9d34e3222b19",
+    "qinv_hex": "85415a2a107820efca24d34bec9f95d60e144ef2f74ebdc8de783ea222683d4246f3724284162d903727d70612caa97ccdf2fa70e248979090fb7cc42d5890ba",
+    "self_checks": [
+      "P*Q=N",
+      "QINV*Q mod P=1",
+      "DP=D mod (P-1)",
+      "DQ=D mod (Q-1)"
+    ]
+  },
+  "symmetric_material": {
+    "pkcs1_separator_offset": 67,
+    "material_length": 60,
+    "encrypted_flag": 1,
+    "protocol": 3,
+    "key_length": 16,
+    "key_hex": "235ac0201a071eda875c0cf33d746b00",
+    "iv_length": 16,
+    "iv_hex": "d111cedd59fd5bf30000000000000000"
+  },
+  "output": {
+    "plaintext_elf_path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/03_第一阶段_Keybox/02_脚本与补丁/只读Keybox补丁_20260826/KeyboxTA回读校验/d91f322ad5a441d5955110eda3272fc0_caller_gate_nop_明文.elf",
+    "plaintext_elf_size": 14760,
+    "plaintext_elf_sha256": "26589cbb8d4e1a235a5e84ed889003447f72b03174f696afe4e9500688f99300",
+    "elf_magic": "7f454c46020101000000000000000000"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "k70e-hybrid-probe-independent-audit-v1",
+  "status": "PASS",
+  "audited_at": "2026-09-06T12:04:49Z",
+  "source_run": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/03_提取结果/K70E_google_rkp_sw_probe_modDICE_cleanDeviceInfo_20260906_195952_oneshot",
+  "source_run_snapshot": {
+    "regular_file_count": 45,
+    "total_regular_file_bytes": 48916,
+    "canonical_path_size_sha256_manifest_sha256": "ac7a5c696d6861bbce79cd7c8aefd82137ff0f97d3d5a75ac8c07bf2cc29109d",
+    "all_directories_mode_0700": true,
+    "all_files_mode_0600": true,
+    "no_symlinks_special_files_or_hardlinks": true
+  },
+  "request": {
+    "sha256": "f0c1208abd682702ea7de9fd19223d267c26ef8c2b7517f73b291b8750fc9303",
+    "size": 2611,
+    "proper_dice_entry_count": 5,
+    "dice_signatures_verified": 5,
+    "outer_signature_verified": true,
+    "keys_to_sign_count": 1,
+    "modified_dice_exact_match": true,
+    "device_info_exactly_matches_historical_clean_request": true,
+    "registered_uds_exact_match": true,
+    "historical_clean_request_sha256": "f03011311dca791fccca64f1f78323ba113197f56ac368fbdeeb97162c3ccf56"
+  },
+  "software_key_relationship": {
+    "private_key_encoding": "unencrypted PKCS8 DER",
+    "private_key_sha256": "58da03dc8361b42b6946c798ff609e825a4bd6263852e59cbd98b300e869f2d8",
+    "private_key_is_p256": true,
+    "software_public_spki_sha256": "1e5ec6f483c8fb632305a7aa4e2b0be4a1a2fa4aca0c38408a932b3d5a84bc67",
+    "private_derived_spki_equals_saved_spki": true,
+    "saved_spki_equals_request_only_key": true,
+    "saved_spki_equals_google_leaf_spki": true,
+    "software_key_distinct_from_dice_identity_leaf": true,
+    "dice_identity_leaf_spki_sha256": "64c672084035d3b8af4c7f2b036ce8905c06cd60bf39fa9bd6ec44cbe0ba4ad2",
+    "private_material_printed": false
+  },
+  "certificate_chain": {
+    "chain_count": 1,
+    "certificate_count": 4,
+    "ordered_chain_sha256": "423116069703debf65c4c34e17657a2b7f9fc43d281f4386f723518c0e312d20",
+    "strict_der_fully_consumed": true,
+    "unique_and_connected_leaf_to_root": true,
+    "server_and_ordered_certificate_sets_equal": true,
+    "raw_response_exactly_encodes_saved_server_chain": true,
+    "certificate_sha256_leaf_to_root": [
+      "b05b883c7777a4cd7449aff3b5faeadb9d5c706c13beefe966f6cf01790ab180",
+      "12642d51c5a0f2900625517363d78758bbf905a4609bc1463cf8589bcedb97fd",
+      "187521be8eec99791aa793ab339172a67f05b1ec1d1259adbe6d5fe7d7f5d43b",
+      "6d9db4ce6c5c0b293166d08986e05774a8776ceb525d9e4329520de12ba4bcc0"
+    ],
+    "all_child_signature_links_verified": true,
+    "root_self_issued_and_self_signature_verified": true,
+    "root_der_sha256": "6d9db4ce6c5c0b293166d08986e05774a8776ceb525d9e4329520de12ba4bcc0",
+    "root_spki_sha256": "3ee44512a1af2beb39c889490c60ea3f82e43f5d5a5532f5ab9419f676cd07ec",
+    "root_der_and_spki_match_pinned_google_root": true,
+    "leaf_not_before": "2026-09-04T12:00:30+00:00",
+    "leaf_not_after": "2026-09-16T14:47:51+00:00",
+    "all_certificates_valid_at_audit_time": true
+  },
+  "provisioning_info": {
+    "oid": "1.3.6.1.4.1.11129.2.1.30",
+    "leaf_occurrence_parsed": true,
+    "parsed_extension_count": 1,
+    "parse_error_count": 0,
+    "not_approved_hit_count": 0,
+    "not_approved_hits": [],
+    "ctf_no_not_approved": true,
+    "leaf_raw_cbor_sha256": "8a28b6caee0213767426c60bacb6e9fae9ad064fbe24d18449583fea2041dab7",
+    "leaf_decoded_typed_map": [
+      {
+        "key": {"type": "int", "value": 1},
+        "value": {"type": "int", "value": 32}
+      },
+      {
+        "key": {"type": "int", "value": 3},
+        "value": {"type": "text", "value": "Xiaomi"}
+      },
+      {
+        "key": {"type": "int", "value": 5},
+        "value": {
+          "type": "map",
+          "value": [
+            {
+              "key": {"type": "int", "value": 1},
+              "value": {"type": "text", "value": "APPROVED"}
+            },
+            {
+              "key": {"type": "int", "value": 2},
+              "value": {
+                "type": "text",
+                "value": "acaa9258a1d3bf97006baf17735504ec976c27ff4f6568d4803726f7b840b6e9"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "non_leaf_occurrences_absent": true,
+    "android_schema_current_strict": false,
+    "android_schema_current_strict_is_diagnostic_only": true
+  },
+  "http_evidence": {
+    "fetch_eek_status": 200,
+    "sign_certificates_status": 200,
+    "saved_body_lengths_and_sha256_match_metadata": true
+  },
+  "independent_checks": {
+    "exact_unique_four_certificate_set": true,
+    "certificate_signature_links_and_root_self_signature": true,
+    "pinned_google_root_der_and_spki": true,
+    "private_spki_equals_saved_public_equals_request_key_equals_leaf": true,
+    "request_five_dice_and_outer_signatures_valid": true,
+    "raw_response_encodes_saved_server_chain": true,
+    "full_chain_provisioning_info_clean": true
+  },
+  "conclusion": {
+    "server_accepted_modified_dice_plus_clean_device_info": true,
+    "modified_dice_measurement_differences_alone_trigger_not_approved": false,
+    "clean_device_info_is_sufficient_with_the_current_modified_dice": true,
+    "remaining_unisolated_cause_scope": "one or a combination of vb_state, bootloader_state, and vbmeta_digest in the previous modified DeviceInfo, or their server-side consistency policy"
+  },
+  "verifier": {
+    "path": "<PROJECT_ROOT>/<DEVICE_WORKSPACE>/02_脚本与补丁/verify_k70e_stock_log_submission.py",
+    "sha256": "f3a26646547132ffa9cd1bfad1c20b0810222391ba39fc60416062c9107f9357"
+  },
+  "limitations": [
+    "This is a research-only semantically hybrid request, not a final approved-stock submission bundle.",
+    "This result isolates the full clean DeviceInfo tuple as sufficient, but does not isolate which one of its three changed boot fields controls policy.",
+    "android_schema_current_strict is false because the accepted Xiaomi extension is outside the narrow public key-1/key-4 diagnostic schema; it is not the CTF rejection gate."
+  ],
+  "network_or_device_access_by_independent_auditor": false,
+  "source_run_directory_modified_by_independent_auditor": false
+}

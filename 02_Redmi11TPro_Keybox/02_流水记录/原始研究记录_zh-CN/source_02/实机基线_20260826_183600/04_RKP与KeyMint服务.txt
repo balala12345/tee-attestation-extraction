@@ -1,0 +1,11 @@
+
+===== 04_RKP与KeyMint服务 =====
+$ adb -s <DEVICE_SERIAL> shell service list | grep -Ei 'remote|provision|keymint|keymaster|secureclock|sharedsecret'; lshal 2>/dev/null | grep -Ei 'remote|provision|keymint|keymaster|secureclock|sharedsecret'
+24	android.hardware.security.keymint.IKeyMintDevice/default: []
+25	android.hardware.security.keymint.IRemotelyProvisionedComponent/default: []
+26	android.hardware.security.secureclock.ISecureClock/default: []
+27	android.hardware.security.sharedsecret.ISharedSecret/default: []
+38	android.security.remoteprovisioning: [android.security.remoteprovisioning.IRemoteProvisioning]
+218	sec_key_att_app_id_provider: [android.security.keymaster.IKeyAttestationApplicationIdProvider]
+X     ? vendor.mediatek.hardware.keymaster_attestation@1.1::I*/* (/vendor/lib/hw/)    N/A        N/A    
+X     ? vendor.mediatek.hardware.keymaster_attestation@1.1::I*/* (/vendor/lib64/hw/)  N/A        N/A    

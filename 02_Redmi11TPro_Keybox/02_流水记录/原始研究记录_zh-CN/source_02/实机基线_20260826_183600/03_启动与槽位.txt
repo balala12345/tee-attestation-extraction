@@ -1,0 +1,9 @@
+
+===== 03_启动与槽位 =====
+$ adb -s <DEVICE_SERIAL> shell getprop ro.boot.slot_suffix; getprop ro.boot.verifiedbootstate; getprop ro.boot.vbmeta.device_state; getprop ro.secureboot.lockstate; getprop ro.secureboot.devicelock; getprop sys.oem_unlock_allowed
+_b
+green
+locked
+locked
+1
+0

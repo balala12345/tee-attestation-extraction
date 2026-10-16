@@ -1,0 +1,45 @@
+{
+  "cdi_leaf_spki_sha256": "64c672084035d3b8af4c7f2b036ce8905c06cd60bf39fa9bd6ec44cbe0ba4ad2",
+  "challenge_length": 32,
+  "challenge_matches": true,
+  "challenge_sha256": "3a1f77fa4da10cb4dfcea72d2aefb390783d819b29fb93b44866d230795e85a8",
+  "csr_length": 2534,
+  "csr_sha256": "c8f7eb8d20474a549aa73a301a8ca1780586853c057e9b5421307057f8566b47",
+  "dice_signatures_verified": 5,
+  "keys_to_sign_count": 0,
+  "outer_csr_signature_verified": true,
+  "status": "PASS",
+  "uds_spki_sha256": "d1a3f13b9fae014e1816a988fe4f611c320f315cc1252e366695f76c63bea3c9",
+  "verified_dice_entries": [
+    {
+      "index": 1,
+      "issuer": "cc6e65e8746e570bbf93c9c3f16f9b340a088456",
+      "subject": "1696b31ca462a3616d6c8a7da8d2e51b6cb88102",
+      "subject_spki_sha256": "54b49c8e218ecae2e087b843d4cac6e59f10edba9108d38b597e579b72d898f0"
+    },
+    {
+      "index": 2,
+      "issuer": "1696b31ca462a3616d6c8a7da8d2e51b6cb88102",
+      "subject": "191e4028174eef155b3480b4486c6e13a70a0d60",
+      "subject_spki_sha256": "e5c3bc558897b5b3af05c4547145d1771866acedb149dd04146a2ebd50c66129"
+    },
+    {
+      "index": 3,
+      "issuer": "191e4028174eef155b3480b4486c6e13a70a0d60",
+      "subject": "6f2822f4565d52b7a54391f2db96a7096f9f6863",
+      "subject_spki_sha256": "abcec5b3c7cd84a23bbb5c3eb5148525eb967649214c2f860e611a1942fff938"
+    },
+    {
+      "index": 4,
+      "issuer": "6f2822f4565d52b7a54391f2db96a7096f9f6863",
+      "subject": "a791a0ae82a85d03d7b1e07de87fd62b7feec154",
+      "subject_spki_sha256": "f613d1ebd77605b3280fc0779d0ae59b90e2bb1591751db73d8c4ab6d6a67c65"
+    },
+    {
+      "index": 5,
+      "issuer": "a791a0ae82a85d03d7b1e07de87fd62b7feec154",
+      "subject": "93338be42a2ab50085d77177394479b147e6c15d",
+      "subject_spki_sha256": "64c672084035d3b8af4c7f2b036ce8905c06cd60bf39fa9bd6ec44cbe0ba4ad2"
+    }
+  ]
+}

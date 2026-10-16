@@ -1,0 +1,3 @@
+
+===== 09_远程配置dumpsys =====
+$ adb -s <DEVICE_SERIAL> shell dumpsys android.security.remoteprovisioning 2>&1

@@ -1,0 +1,10 @@
+{
+  "fully_stock_same_run_provenance": false,
+  "one_shot_state": "CONSUMED_NO_RETRY",
+  "organizer_acceptance": "NOT_RECORDED",
+  "phone_recovery": "SEPARATE_UNRESOLVED",
+  "raw_final_result_status": "PASS_CLEAN",
+  "research_only_semantically_hybrid": true,
+  "schema": "k70e-google-rkp-sw-hybrid-submission-v1",
+  "status": "PASS_CLEAN_HYBRID"
+}

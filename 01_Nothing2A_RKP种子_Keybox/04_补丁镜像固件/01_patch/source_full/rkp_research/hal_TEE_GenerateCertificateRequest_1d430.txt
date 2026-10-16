@@ -1,0 +1,421 @@
+18595:   1d430:      	sub	sp, sp, #240
+18596-   1d434:      	stp	x29, x30, [sp, #144]
+18597-   1d438:      	add	x29, sp, #144
+18598-   1d43c:      	stp	x28, x27, [sp, #160]
+18599-   1d440:      	stp	x26, x25, [sp, #176]
+18600-   1d444:      	stp	x24, x23, [sp, #192]
+18601-   1d448:      	stp	x22, x21, [sp, #208]
+18602-   1d44c:      	stp	x20, x19, [sp, #224]
+18603-   1d450:      	stp	x4, x5, [sp, #64]
+18604-   1d454:      	mrs	x8, TPIDR_EL0
+18605-   1d458:      	mov	x27, x2
+18606-   1d45c:      	mov	w23, w1
+18607-   1d460:      	stur	x8, [x29, #-64]
+18608-   1d464:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcba8>
+18609-   1d468:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcba0>
+18610-   1d46c:      	mov	x22, x0
+18611-   1d470:      	ldr	x8, [x8, #40]
+18612-   1d474:      	add	x1, x1, #2886
+18613-   1d478:      	add	x2, x2, #2222
+18614-   1d47c:      	mov	w0, #3
+18615-   1d480:      	ldr	x28, [x29, #96]
+18616-   1d484:      	mov	x19, x7
+18617-   1d488:      	mov	x21, x6
+18618-   1d48c:      	mov	x26, x3
+18619-   1d490:      	stur	x8, [x29, #-8]
+18620-   1d494:      	bl	0x1e9d0 <__android_log_print@plt>
+18621-   1d498:      	str	x22, [sp, #56]
+18622-   1d49c:      	ldr	x20, [x22], #8
+18623-   1d4a0:      	stp	xzr, xzr, [x29, #-40]
+18624-   1d4a4:      	stp	xzr, xzr, [x29, #-56]
+18625-   1d4a8:      	stur	xzr, [x29, #-16]
+18626-   1d4ac:      	cbz	x26, 0x1d4c4 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcc64>
+18627-   1d4b0:      	cmp	x26, #1
+18628-   1d4b4:      	b.ne	0x1d4cc <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcc6c>
+18629-   1d4b8:      	mov	x8, xzr
+18630-   1d4bc:      	mov	w25, #4
+18631-   1d4c0:      	b	0x1d604 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcda4>
+18632-   1d4c4:      	mov	w25, #4
+18633-   1d4c8:      	b	0x1d6a8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce48>
+18634-   1d4cc:      	and	x8, x26, #0xfffffffffffffffe
+18635-   1d4d0:      	sub	x9, x8, #2
+18636-   1d4d4:      	lsr	x10, x9, #1
+18637-   1d4d8:      	cmp	x9, #6
+18638-   1d4dc:      	add	x10, x10, #1
+18639-   1d4e0:      	and	x11, x10, #0x3
+18640-   1d4e4:      	b.hs	0x1d4f8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcc98>
+18641-   1d4e8:      	mov	x12, xzr
+18642-   1d4ec:      	mov	x9, xzr
+18643-   1d4f0:      	mov	w10, #4
+18644-   1d4f4:      	b	0x1d564 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcd04>
+18645-   1d4f8:      	mov	x12, xzr
+18646-   1d4fc:      	mov	x9, xzr
+18647-   1d500:      	and	x13, x10, #0xfffffffffffffffc
+18648-   1d504:      	add	x14, x27, #72
+18649-   1d508:      	mov	w10, #4
+18650-   1d50c:      	ldur	x15, [x14, #-64]
+18651-   1d510:      	add	x12, x12, #8
+18652-   1d514:      	ldur	x16, [x14, #-48]
+18653-   1d518:      	subs	x13, x13, #4
+18654-   1d51c:      	ldur	x17, [x14, #-32]
+18655-   1d520:      	ldur	x0, [x14, #-16]
+18656-   1d524:      	add	x10, x10, x15
+18657-   1d528:      	ldr	x1, [x14]
+18658-   1d52c:      	add	x9, x9, x16
+18659-   1d530:      	ldr	x15, [x14, #16]
+18660-   1d534:      	add	x10, x10, x17
+18661-   1d538:      	ldr	x16, [x14, #32]
+18662-   1d53c:      	add	x9, x9, x0
+18663-   1d540:      	ldr	x17, [x14, #48]
+18664-   1d544:      	add	x10, x10, x1
+18665-   1d548:      	add	x9, x9, x15
+18666-   1d54c:      	add	x14, x14, #128
+18667-   1d550:      	add	x10, x10, x16
+18668-   1d554:      	add	x9, x9, x17
+18669-   1d558:      	add	x10, x10, #16
+18670-   1d55c:      	add	x9, x9, #16
+18671-   1d560:      	b.ne	0x1d50c <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xccac>
+18672-   1d564:      	cbz	x11, 0x1d5f8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcd98>
+18673-   1d568:      	lsl	x13, x12, #4
+18674-   1d56c:      	cmp	x11, #1
+18675-   1d570:      	add	x14, x27, x13
+18676-   1d574:      	orr	x13, x13, #0x10
+18677-   1d578:      	add	x13, x27, x13
+18678-   1d57c:      	ldr	x14, [x14, #8]
+18679-   1d580:      	ldr	x13, [x13, #8]
+18680-   1d584:      	add	x10, x10, x14
+18681-   1d588:      	add	x9, x9, x13
+18682-   1d58c:      	add	x10, x10, #4
+18683-   1d590:      	add	x9, x9, #4
+18684-   1d594:      	b.eq	0x1d5f8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcd98>
+18685-   1d598:      	add	x13, x12, #2
+18686-   1d59c:      	cmp	x11, #2
+18687-   1d5a0:      	lsl	x13, x13, #4
+18688-   1d5a4:      	add	x14, x27, x13
+18689-   1d5a8:      	orr	x13, x13, #0x10
+18690-   1d5ac:      	add	x13, x27, x13
+18691-   1d5b0:      	ldr	x14, [x14, #8]
+18692-   1d5b4:      	ldr	x13, [x13, #8]
+18693-   1d5b8:      	add	x10, x10, x14
+18694-   1d5bc:      	add	x9, x9, x13
+18695-   1d5c0:      	add	x10, x10, #4
+18696-   1d5c4:      	add	x9, x9, #4
+18697-   1d5c8:      	b.eq	0x1d5f8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcd98>
+18698-   1d5cc:      	add	x11, x12, #4
+18699-   1d5d0:      	lsl	x11, x11, #4
+18700-   1d5d4:      	add	x12, x27, x11
+18701-   1d5d8:      	orr	x11, x11, #0x10
+18702-   1d5dc:      	add	x11, x27, x11
+18703-   1d5e0:      	ldr	x12, [x12, #8]
+18704-   1d5e4:      	ldr	x11, [x11, #8]
+18705-   1d5e8:      	add	x10, x10, x12
+18706-   1d5ec:      	add	x9, x9, x11
+18707-   1d5f0:      	add	x10, x10, #4
+18708-   1d5f4:      	add	x9, x9, #4
+18709-   1d5f8:      	add	x25, x9, x10
+18710-   1d5fc:      	cmp	x8, x26
+18711-   1d600:      	b.eq	0x1d6a8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce48>
+18712-   1d604:      	sub	w10, w26, w8
+18713-   1d608:      	mvn	x9, x8
+18714-   1d60c:      	add	x9, x9, x26
+18715-   1d610:      	ands	x10, x10, #0x3
+18716-   1d614:      	b.eq	0x1d664 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce04>
+18717-   1d618:      	add	x11, x27, x8, lsl #4
+18718-   1d61c:      	cmp	x10, #1
+18719-   1d620:      	ldr	x11, [x11, #8]
+18720-   1d624:      	add	x11, x25, x11
+18721-   1d628:      	add	x25, x11, #4
+18722-   1d62c:      	orr	x11, x8, #0x1
+18723-   1d630:      	b.ne	0x1d644 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcde4>
+18724-   1d634:      	mov	x8, x11
+18725-   1d638:      	cmp	x9, #3
+18726-   1d63c:      	b.hs	0x1d66c <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce0c>
+18727-   1d640:      	b	0x1d6a8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce48>
+18728-   1d644:      	add	x11, x27, x11, lsl #4
+18729-   1d648:      	cmp	x10, #2
+18730-   1d64c:      	ldr	x11, [x11, #8]
+18731-   1d650:      	add	x11, x25, x11
+18732-   1d654:      	add	x25, x11, #4
+18733-   1d658:      	add	x11, x8, #2
+18734-   1d65c:      	b.ne	0x1d8c8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd068>
+18735-   1d660:      	mov	x8, x11
+18736-   1d664:      	cmp	x9, #3
+18737-   1d668:      	b.lo	0x1d6a8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce48>
+18738-   1d66c:      	add	x9, x27, x8, lsl #4
+18739-   1d670:      	sub	x8, x26, x8
+18740-   1d674:      	add	x9, x9, #40
+18741-   1d678:      	ldur	x10, [x9, #-32]
+18742-   1d67c:      	subs	x8, x8, #4
+18743-   1d680:      	ldur	x11, [x9, #-16]
+18744-   1d684:      	ldr	x12, [x9]
+18745-   1d688:      	ldr	x13, [x9, #16]
+18746-   1d68c:      	add	x10, x25, x10
+18747-   1d690:      	add	x10, x10, x11
+18748-   1d694:      	add	x9, x9, #64
+18749-   1d698:      	add	x10, x10, x12
+18750-   1d69c:      	add	x10, x10, x13
+18751-   1d6a0:      	add	x25, x10, #16
+18752-   1d6a4:      	b.ne	0x1d678 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce18>
+18753-   1d6a8:      	sub	x0, x29, #16
+18754-   1d6ac:      	mov	w1, w25
+18755-   1d6b0:      	bl	0x131d0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x2970>
+18756-   1d6b4:      	cbz	w0, 0x1d718 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xceb8>
+18757-   1d6b8:      	adrp	x20, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcdfc>
+18758-   1d6bc:      	adrp	x23, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcdf4>
+18759-   1d6c0:      	mov	w24, w0
+18760-   1d6c4:      	add	x20, x20, #2886
+18761-   1d6c8:      	add	x23, x23, #2461
+18762-   1d6cc:      	adrp	x3, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce10>
+18763-   1d6d0:      	add	x3, x3, #923
+18764-   1d6d4:      	mov	w0, #6
+18765-   1d6d8:      	mov	x1, x20
+18766-   1d6dc:      	mov	x2, x23
+18767-   1d6e0:      	mov	w4, w24
+18768-   1d6e4:      	bl	0x1e9d0 <__android_log_print@plt>
+18769-   1d6e8:      	adrp	x3, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce2c>
+18770-   1d6ec:      	mov	w0, #6
+18771-   1d6f0:      	add	x3, x3, #2373
+18772-   1d6f4:      	mov	x1, x20
+18773-   1d6f8:      	mov	x2, x23
+18774-   1d6fc:      	mov	w4, w24
+18775-   1d700:      	bl	0x1e9d0 <__android_log_print@plt>
+18776-   1d704:      	ldur	x26, [x29, #-64]
+18777-   1d708:      	mov	x20, xzr
+18778-   1d70c:      	mov	w23, wzr
+18779-   1d710:      	mov	x27, xzr
+18780-   1d714:      	b	0x1dac8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd268>
+18781-   1d718:      	ldur	x8, [x29, #-16]
+18782-   1d71c:      	sub	x0, x29, #24
+18783-   1d720:      	mov	w1, w26
+18784-   1d724:      	str	x19, [sp, #40]
+18785-   1d728:      	stur	x8, [x29, #-24]
+18786-   1d72c:      	bl	0x13250 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x29f0>
+18787-   1d730:      	str	x22, [sp, #32]
+18788-   1d734:      	cbz	x26, 0x1d760 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcf00>
+18789-   1d738:      	add	x19, x27, #8
+18790-   1d73c:      	ldr	w1, [x19]
+18791-   1d740:      	sub	x0, x29, #24
+18792-   1d744:      	bl	0x13250 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x29f0>
+18793-   1d748:      	ldur	x1, [x19, #-8]
+18794-   1d74c:      	sub	x0, x29, #24
+18795-   1d750:      	ldr	w2, [x19], #16
+18796-   1d754:      	bl	0x13290 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x2a30>
+18797-   1d758:      	subs	x26, x26, #1
+18798-   1d75c:      	b.ne	0x1d73c <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcedc>
+18799-   1d760:      	ldp	x10, x9, [sp, #64]
+18800-   1d764:      	mov	x22, x20
+18801-   1d768:      	str	w23, [sp, #28]
+18802-   1d76c:      	ldur	x8, [x29, #-16]
+18803-   1d770:      	ldr	x20, [x10, #8]
+18804-   1d774:      	ldr	x19, [x9, #8]
+18805-   1d778:      	str	x8, [sp, #48]
+18806-   1d77c:      	add	w8, w20, w25
+18807-   1d780:      	adds	w0, w8, w19
+18808-   1d784:      	b.eq	0x1d808 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcfa8>
+18809-   1d788:      	ldr	x26, [x10]
+18810-   1d78c:      	mov	x23, x0
+18811-   1d790:      	ldr	x24, [x9]
+18812-   1d794:      	adrp	x1, 0x1f000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcf3c>
+18813-   1d798:      	ldr	x1, [x1, #2024]
+18814-   1d79c:      	bl	0x1ec70 <_ZnamRKSt9nothrow_t@plt>
+18815-   1d7a0:      	mov	x27, x0
+18816-   1d7a4:      	cbz	x0, 0x1d88c <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd02c>
+18817-   1d7a8:      	stp	x28, x21, [sp, #8]
+18818-   1d7ac:      	ldur	x21, [x29, #-64]
+18819-   1d7b0:      	and	x28, x25, #0xffffffff
+18820-   1d7b4:      	ldr	x1, [sp, #48]
+18821-   1d7b8:      	cbz	x1, 0x1d7c8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcf68>
+18822-   1d7bc:      	mov	x0, x27
+18823-   1d7c0:      	mov	x2, x28
+18824-   1d7c4:      	bl	0x1e7b0 <memcpy@plt>
+18825-   1d7c8:      	and	x20, x20, #0xffffffff
+18826-   1d7cc:      	cbz	x26, 0x1d7e0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcf80>
+18827-   1d7d0:      	add	x0, x27, x28
+18828-   1d7d4:      	mov	x1, x26
+18829-   1d7d8:      	mov	x2, x20
+18830-   1d7dc:      	bl	0x1e7b0 <memcpy@plt>
+18831-   1d7e0:      	cbz	x24, 0x1d7f8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcf98>
+18832-   1d7e4:      	add	x8, x27, x28
+18833-   1d7e8:      	and	x2, x19, #0xffffffff
+18834-   1d7ec:      	add	x0, x8, x20
+18835-   1d7f0:      	mov	x1, x24
+18836-   1d7f4:      	bl	0x1e7b0 <memcpy@plt>
+18837-   1d7f8:      	mov	x26, x21
+18838-   1d7fc:      	mov	x20, x22
+18839-   1d800:      	ldp	x28, x21, [sp, #8]
+18840-   1d804:      	b	0x1d818 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcfb8>
+18841-   1d808:      	mov	x23, x0
+18842-   1d80c:      	mov	x27, xzr
+18843-   1d810:      	mov	x20, x22
+18844-   1d814:      	ldur	x26, [x29, #-64]
+18845-   1d818:      	mov	w8, #1024
+18846-   1d81c:      	mov	x0, x21
+18847-   1d820:      	mov	w1, #1024
+18848-   1d824:      	str	x8, [x21, #8]
+18849-   1d828:      	bl	0x131d0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x2970>
+18850-   1d82c:      	ldp	x22, x19, [sp, #32]
+18851-   1d830:      	cbz	w0, 0x1d854 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcff4>
+18852-   1d834:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcf78>
+18853-   1d838:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcf70>
+18854-   1d83c:      	adrp	x3, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcf74>
+18855-   1d840:      	mov	w24, w0
+18856-   1d844:      	add	x1, x1, #2886
+18857-   1d848:      	add	x2, x2, #2461
+18858-   1d84c:      	add	x3, x3, #3810
+18859-   1d850:      	b	0x1dab8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd258>
+18860-   1d854:      	mov	w8, #4096
+18861-   1d858:      	mov	x0, x19
+18862-   1d85c:      	mov	w1, #4096
+18863-   1d860:      	str	x8, [x19, #8]
+18864-   1d864:      	bl	0x131d0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x2970>
+18865-   1d868:      	cbz	w0, 0x1d8e8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd088>
+18866-   1d86c:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcfb0>
+18867-   1d870:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcfa8>
+18868-   1d874:      	adrp	x3, 0x5000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcfb4>
+18869-   1d878:      	mov	w24, w0
+18870-   1d87c:      	add	x1, x1, #2886
+18871-   1d880:      	add	x2, x2, #2461
+18872-   1d884:      	add	x3, x3, #1560
+18873-   1d888:      	b	0x1dab8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd258>
+18874-   1d88c:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcfd0>
+18875-   1d890:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcfc8>
+18876-   1d894:      	adrp	x3, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xcfcc>
+18877-   1d898:      	add	x1, x1, #2886
+18878-   1d89c:      	add	x2, x2, #2461
+18879-   1d8a0:      	add	x3, x3, #2920
+18880-   1d8a4:      	mov	w0, #6
+18881-   1d8a8:      	mov	w4, #-41
+18882-   1d8ac:      	mov	w24, #-41
+18883-   1d8b0:      	bl	0x1e9d0 <__android_log_print@plt>
+18884-   1d8b4:      	ldp	x19, x20, [sp, #40]
+18885-   1d8b8:      	mov	w23, wzr
+18886-   1d8bc:      	ldur	x26, [x29, #-64]
+18887-   1d8c0:      	ldr	x22, [sp, #32]
+18888-   1d8c4:      	b	0x1dac8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd268>
+18889-   1d8c8:      	add	x10, x27, x11, lsl #4
+18890-   1d8cc:      	add	x8, x8, #3
+18891-   1d8d0:      	ldr	x10, [x10, #8]
+18892-   1d8d4:      	add	x10, x25, x10
+18893-   1d8d8:      	add	x25, x10, #4
+18894-   1d8dc:      	cmp	x9, #3
+18895-   1d8e0:      	b.hs	0x1d66c <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce0c>
+18896-   1d8e4:      	b	0x1d6a8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xce48>
+18897-   1d8e8:      	mov	w8, #32
+18898-   1d8ec:      	mov	x0, x28
+18899-   1d8f0:      	mov	w1, #32
+18900-   1d8f4:      	str	x8, [x28, #8]
+18901-   1d8f8:      	bl	0x131d0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x2970>
+18902-   1d8fc:      	cbz	w0, 0x1d920 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd0c0>
+18903-   1d900:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd044>
+18904-   1d904:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd03c>
+18905-   1d908:      	adrp	x3, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd04c>
+18906-   1d90c:      	mov	w24, w0
+18907-   1d910:      	add	x1, x1, #2886
+18908-   1d914:      	add	x2, x2, #2461
+18909-   1d918:      	add	x3, x3, #2473
+18910-   1d91c:      	b	0x1dab8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd258>
+18911-   1d920:      	ldr	x0, [sp, #56]
+18912-   1d924:      	bl	0x17740 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x6ee0>
+18913-   1d928:      	sub	x3, x29, #32
+18914-   1d92c:      	mov	x0, x22
+18915-   1d930:      	mov	x1, x27
+18916-   1d934:      	mov	w2, w23
+18917-   1d938:      	bl	0x15bf0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x5390>
+18918-   1d93c:      	cbz	w0, 0x1d960 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd100>
+18919-   1d940:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd084>
+18920-   1d944:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd07c>
+18921-   1d948:      	adrp	x3, 0x4000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd084>
+18922-   1d94c:      	mov	w24, w0
+18923-   1d950:      	add	x1, x1, #2886
+18924-   1d954:      	add	x2, x2, #2461
+18925-   1d958:      	add	x3, x3, #2395
+18926-   1d95c:      	b	0x1dab8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd258>
+18927-   1d960:      	ldr	x1, [x21]
+18928-   1d964:      	sub	x3, x29, #40
+18929-   1d968:      	ldr	w2, [x21, #8]
+18930-   1d96c:      	mov	x0, x22
+18931-   1d970:      	bl	0x15bf0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x5390>
+18932-   1d974:      	cbz	w0, 0x1d998 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd138>
+18933-   1d978:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd0bc>
+18934-   1d97c:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd0b4>
+18935-   1d980:      	adrp	x3, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd0c4>
+18936-   1d984:      	mov	w24, w0
+18937-   1d988:      	add	x1, x1, #2886
+18938-   1d98c:      	add	x2, x2, #2461
+18939-   1d990:      	add	x3, x3, #3967
+18940-   1d994:      	b	0x1dab8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd258>
+18941-   1d998:      	ldr	x1, [x19]
+18942-   1d99c:      	sub	x3, x29, #48
+18943-   1d9a0:      	ldr	w2, [x19, #8]
+18944-   1d9a4:      	mov	x0, x22
+18945-   1d9a8:      	bl	0x15bf0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x5390>
+18946-   1d9ac:      	cbz	w0, 0x1d9d0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd170>
+18947-   1d9b0:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd0f4>
+18948-   1d9b4:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd0ec>
+18949-   1d9b8:      	adrp	x3, 0x4000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd0f4>
+18950-   1d9bc:      	mov	w24, w0
+18951-   1d9c0:      	add	x1, x1, #2886
+18952-   1d9c4:      	add	x2, x2, #2461
+18953-   1d9c8:      	add	x3, x3, #2475
+18954-   1d9cc:      	b	0x1dab8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd258>
+18955-   1d9d0:      	ldr	x1, [x28]
+18956-   1d9d4:      	sub	x3, x29, #56
+18957-   1d9d8:      	ldr	w2, [x28, #8]
+18958-   1d9dc:      	mov	x0, x22
+18959-   1d9e0:      	bl	0x15bf0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x5390>
+18960-   1d9e4:      	cbz	w0, 0x1da08 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd1a8>
+18961-   1d9e8:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd12c>
+18962-   1d9ec:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd124>
+18963-   1d9f0:      	adrp	x3, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd128>
+18964-   1d9f4:      	mov	w24, w0
+18965-   1d9f8:      	add	x1, x1, #2886
+18966-   1d9fc:      	add	x2, x2, #2461
+18967-   1da00:      	add	x3, x3, #2253
+18968-   1da04:      	b	0x1dab8 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd258>
+18969-   1da08:      	mov	w8, #1026
+18970-   1da0c:      	ldr	x10, [sp, #64]
+18971-   1da10:      	movk	w8, #5, lsl #16
+18972-   1da14:      	stur	w25, [x20, #17]
+18973-   1da18:      	mov	x0, x22
+18974-   1da1c:      	mov	x1, x20
+18975-   1da20:      	str	w8, [x20]
+18976-   1da24:      	ldr	w8, [sp, #28]
+18977-   1da28:      	ldur	w9, [x29, #-32]
+18978-   1da2c:      	and	w8, w8, #0x1
+18979-   1da30:      	stur	w9, [x20, #13]
+18980-   1da34:      	strb	w8, [x20, #12]
+18981-   1da38:      	add	w8, w9, w25
+18982-   1da3c:      	add	w9, w25, w9
+18983-   1da40:      	stur	w8, [x20, #21]
+18984-   1da44:      	ldr	x8, [x10, #8]
+18985-   1da48:      	stur	w8, [x20, #25]
+18986-   1da4c:      	ldr	w8, [x10, #8]
+18987-   1da50:      	add	w8, w9, w8
+18988-   1da54:      	ldur	w9, [x29, #-40]
+18989-   1da58:      	stur	w8, [x20, #29]
+18990-   1da5c:      	ldr	x8, [sp, #72]
+18991-   1da60:      	ldr	x8, [x8, #8]
+18992-   1da64:      	stur	w9, [x20, #37]
+18993-   1da68:      	ldur	w9, [x29, #-48]
+18994-   1da6c:      	stur	w8, [x20, #33]
+18995-   1da70:      	ldr	x8, [x21, #8]
+18996-   1da74:      	stur	w9, [x20, #45]
+18997-   1da78:      	ldur	w9, [x29, #-56]
+18998-   1da7c:      	stur	w8, [x20, #41]
+18999-   1da80:      	ldr	x8, [x19, #8]
+19000-   1da84:      	stur	w9, [x20, #53]
+19001-   1da88:      	stur	w8, [x20, #49]
+19002-   1da8c:      	ldr	x8, [x28, #8]
+19003-   1da90:      	stur	w8, [x20, #57]
+19004-   1da94:      	bl	0x15ca0 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0x5440>
+19005-   1da98:      	mov	w24, w0
+19006-   1da9c:      	cbz	w0, 0x1dc84 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd424>
+19007-   1daa0:      	adrp	x1, 0x6000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd1e4>
+19008-   1daa4:      	adrp	x2, 0x3000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd1dc>
+19009-   1daa8:      	adrp	x3, 0x5000 <_ZN3ndk12BnCInterfaceIN4aidl7android8hardware8security7keymint17IKeyMintOperationEE8asBinderEv+0xd1e8>
+19010-   1daac:      	add	x1, x1, #2886
+19011-   1dab0:      	add	x2, x2, #2461
+19012-   1dab4:      	add	x3, x3, #3139
+19013-   1dab8:      	mov	w0, #6
+19014-   1dabc:      	mov	w4, w24
+19015-   1dac0:      	bl	0x1e9d0 <__android_log_print@plt>

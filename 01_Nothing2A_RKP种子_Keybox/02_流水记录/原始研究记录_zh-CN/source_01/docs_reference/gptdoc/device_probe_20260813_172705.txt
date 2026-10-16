@@ -1,0 +1,83 @@
+$ adb devices -l
+List of devices attached
+<DEVICE_SERIAL>        device usb:1-1 product:PacmanEEA model:A142 device:Pacman transport_id:8
+
+
+$ adb get-state
+device
+
+$ selected getprop
+ro.product.model=A142
+ro.product.device=Pacman
+ro.hardware=mt6886
+ro.build.display.id=U2.5-240114-2323
+ro.build.version.release=14
+ro.build.version.sdk=34
+ro.boot.slot_suffix=_a
+ro.boot.flash.locked=0
+ro.boot.verifiedbootstate=orange
+ro.boot.vbmeta.device_state=unlocked
+sys.oem_unlock_allowed=1
+ro.crypto.state=encrypted
+init.svc.tee-1-1=running
+init.svc.keystore2=running
+init.svc.rkp_factory_extraction=
+init.svc.rkpd=
+
+$ id/su
+uid=2000(shell) gid=2000(shell) groups=2000(shell),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),1078(ext_data_rw),1079(ext_obb_rw),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid),3012(readtracefs) context=u:r:shell:s0
+/system_ext/bin/su
+uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0
+
+$ service list key/rkp
+20	android.hardware.drm.IDrmFactory/clearkey: [android.hardware.drm.IDrmFactory]
+21	android.hardware.drm.IDrmFactory/widevine: [android.hardware.drm.IDrmFactory]
+56	android.hardware.security.keymint.IKeyMintDevice/default: [android.hardware.security.keymint.IKeyMintDevice]
+57	android.hardware.security.keymint.IRemotelyProvisionedComponent/default: [android.hardware.security.keymint.IRemotelyProvisionedComponent]
+65	android.os.UpdateEngineService: [android.os.IUpdateEngine]
+66	android.os.UpdateEngineStableService: [android.os.IUpdateEngineStable]
+68	android.security.authorization: [android.security.authorization.IKeystoreAuthorization]
+69	android.security.compat: [android.security.compat.IKeystoreCompatService]
+71	android.security.legacykeystore: [android.security.legacykeystore.ILegacyKeystore]
+72	android.security.maintenance: [android.security.maintenance.IKeystoreMaintenance]
+73	android.security.metrics: [android.security.metrics.IKeystoreMetrics]
+75	android.system.keystore2.IKeystoreService/default: [android.system.keystore2.IKeystoreService]
+130	drm.drmManager: [drm.IDrmManagerService]
+203	netpolicy: [android.net.INetworkPolicyManager]
+242	remote_provisioning: [android.security.rkp.IRemoteProvisioning]
+254	sec_key_att_app_id_provider: [android.security.keymaster.IKeyAttestationApplicationIdProvider]
+
+$ ps relevant
+root           192     2          0      0 0                   0 S [mml_drm_done]
+root           207     2          0      0 0                   0 S [mtk_drm_disp_id]
+root           210     2          0      0 0                   0 S [mtk_drm_cwb]
+root           212     2          0      0 0                   0 S [mtk_drm_fake_vs]
+root           228     2          0      0 0                   0 S [tee_log]
+root           229     2          0      0 0                   0 D [tee_irq_bh]
+root           230     2          0      0 0                   0 S [tee_worker/0]
+root           231     2          0      0 0                   0 S [tee_worker/1]
+root           232     2          0      0 0                   0 S [tee_worker/2]
+root           233     2          0      0 0                   0 S [tee_worker/3]
+root           577     1   10845784   4252 0                   0 S nt_key_monitor
+keystore       584     1   11174880  15992 0                   0 S keystore2
+system         585     1   10847860   7260 0                   0 S android.hardware.security.keymint@2.0-service.trustonic
+media          864     1   10840736   6752 0                   0 S android.hardware.drm-service.clearkey
+system         866     1   10804280   5320 0                   0 S android.hardware.gatekeeper@1.0-service
+system         885     1   10889328   5624 0                   0 S vendor.trustonic.tee@1.1-service
+drm            974     1   10939752   8264 0                   0 S drmserver64
+system        1129     1   10870440   5208 0                   0 S gatekeeperd
+u0_a202       4681   857   14877864 107416 0                   0 S com.android.rkpdapp
+system        8825   857   14641220 107616 0                   0 S com.android.keychain
+media         8965     1   10937544  12324 0                   0 S android.hardware.drm-service.widevine
+u0_a220       9008   857   14900872 155192 0                   0 S com.pwn.wvtrigger
+
+$ hwservicemanager relevant
+DM,FC ? android.hardware.gatekeeper@1.0::IGatekeeper/default                                  N/A        N/A    
+FM    ? android.system.wifi.keystore@1.0::IKeystore/default                                   N/A        N/A    
+FC    ? android.hardware.gatekeeper@1.0::IGatekeeper/default                                  N/A        866    866
+X     ? android.hardware.gatekeeper@1.0::I*/* (/vendor/lib/hw/)                       N/A        N/A    
+X     ? android.hardware.gatekeeper@1.0::I*/* (/vendor/lib64/hw/)                     N/A        N/A    
+
+$ packages rkpd
+package:com.android.keychain
+package:com.android.rkpdapp

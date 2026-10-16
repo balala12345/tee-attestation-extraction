@@ -1,0 +1,492 @@
+
+analysis/0706_text_vma.elf:	file format elf64-littleaarch64
+
+Disassembly of section .data:
+
+0000000000001000 <_binary_analysis_0706_text_bin_start>:
+    a3e8: fd 7b ae a9  	stp	x29, x30, [sp, #-288]!
+    a3ec: fd 03 00 91  	mov	x29, sp
+    a3f0: f5 5b 02 a9  	stp	x21, x22, [sp, #32]
+    a3f4: d5 01 00 d0  	adrp	x21, 0x44000 <_binary_analysis_0706_text_bin_start+0x94dc>
+    a3f8: f6 03 02 aa  	mov	x22, x2
+    a3fc: a4 66 41 f9  	ldr	x4, [x21, #712]
+    a400: f9 6b 04 a9  	stp	x25, x26, [sp, #64]
+    a404: fa 03 00 aa  	mov	x26, x0
+    a408: 80 00 40 f9  	ldr	x0, [x4]
+    a40c: e0 8f 00 f9  	str	x0, [sp, #280]
+    a410: 00 00 80 d2  	mov	x0, #0
+    a414: f3 53 01 a9  	stp	x19, x20, [sp, #16]
+    a418: 00 20 80 52  	mov	w0, #256
+    a41c: f3 03 01 aa  	mov	x19, x1
+    a420: 01 00 80 52  	mov	w1, #0
+    a424: f7 63 03 a9  	stp	x23, x24, [sp, #48]
+    a428: f7 03 03 2a  	mov	w23, w3
+    a42c: 11 61 00 94  	bl	0x22870 <_binary_analysis_0706_text_bin_start+0x21870>
+    a430: 80 33 00 b4  	cbz	x0, 0xaaa0 <_binary_analysis_0706_text_bin_start+0x9aa0>
+    a434: f4 03 00 aa  	mov	x20, x0
+    a438: a0 01 00 d0  	adrp	x0, 0x40000 <_binary_analysis_0706_text_bin_start+0x9510>
+    a43c: 05 80 08 91  	add	x5, x0, #544
+    a440: f8 e3 01 91  	add	x24, sp, #120
+    a444: 01 40 44 79  	ldrh	w1, [x0, #544]
+    a448: f9 03 04 91  	add	x25, sp, #256
+    a44c: 64 00 80 52  	mov	w4, #3
+    a450: 03 20 80 52  	mov	w3, #256
+    a454: a0 08 40 39  	ldrb	w0, [x5, #2]
+    a458: f8 67 07 a9  	stp	x24, x25, [sp, #112]
+    a45c: e4 83 00 b9  	str	w4, [sp, #128]
+    a460: fa 47 00 f9  	str	x26, [sp, #136]
+    a464: e3 93 00 b9  	str	w3, [sp, #144]
+    a468: ff 4f 00 f9  	str	xzr, [sp, #152]
+    a46c: ff a3 00 b9  	str	wzr, [sp, #160]
+    a470: ff ff 0a a9  	stp	xzr, xzr, [sp, #168]
+    a474: 1f 7f 04 a9  	stp	xzr, xzr, [x24, #64]
+    a478: 1f 7f 05 a9  	stp	xzr, xzr, [x24, #80]
+    a47c: 1f 7f 06 a9  	stp	xzr, xzr, [x24, #96]
+    a480: 1f 7f 07 a9  	stp	xzr, xzr, [x24, #112]
+    a484: e1 03 02 79  	strh	w1, [sp, #256]
+    a488: e0 0b 04 39  	strb	w0, [sp, #258]
+    a48c: 33 22 00 b4  	cbz	x19, 0xa8d0 <_binary_analysis_0706_text_bin_start+0x98d0>
+    a490: fa c3 01 91  	add	x26, sp, #112
+    a494: 41 00 80 52  	mov	w1, #2
+    a498: e3 03 1a aa  	mov	x3, x26
+    a49c: e0 93 01 91  	add	x0, sp, #100
+    a4a0: 01 21 a0 72  	movk	w1, #264, lsl #16
+    a4a4: 02 00 80 52  	mov	w2, #0
+    a4a8: fb 73 05 a9  	stp	x27, x28, [sp, #80]
+    a4ac: 1b 20 80 d2  	mov	x27, #256
+    a4b0: fb 37 00 f9  	str	x27, [sp, #104]
+    a4b4: 53 60 00 94  	bl	0x22600 <_binary_analysis_0706_text_bin_start+0x21600>
+    a4b8: a0 27 00 35  	cbnz	w0, 0xa9ac <_binary_analysis_0706_text_bin_start+0x99ac>
+    a4bc: e0 67 40 b9  	ldr	w0, [sp, #100]
+    a4c0: e2 03 1b aa  	mov	x2, x27
+    a4c4: e1 03 13 aa  	mov	x1, x19
+    a4c8: e4 a3 01 91  	add	x4, sp, #104
+    a4cc: e3 03 14 aa  	mov	x3, x20
+    a4d0: 26 60 00 94  	bl	0x22568 <_binary_analysis_0706_text_bin_start+0x21568>
+    a4d4: c0 2c 00 35  	cbnz	w0, 0xaa6c <_binary_analysis_0706_text_bin_start+0x9a6c>
+    a4d8: e5 37 40 f9  	ldr	x5, [sp, #104]
+    a4dc: bf 00 04 71  	cmp	w5, #256
+    a4e0: 01 28 00 54  	b.ne	0xa9e0 <_binary_analysis_0706_text_bin_start+0x99e0>
+    a4e4: 80 02 80 52  	mov	w0, #20
+    a4e8: e0 7b 00 b9  	str	w0, [sp, #120]
+    a4ec: ff 7f 00 f9  	str	xzr, [sp, #248]
+    a4f0: 80 02 40 39  	ldrb	w0, [x20]
+    a4f4: 60 30 38 37  	tbnz	w0, #7, 0xab00 <_binary_analysis_0706_text_bin_start+0x9b00>
+    a4f8: 80 fe 43 39  	ldrb	w0, [x20, #255]
+    a4fc: 1f f0 02 71  	cmp	w0, #188
+    a500: 01 24 00 54  	b.ne	0xa980 <_binary_analysis_0706_text_bin_start+0x9980>
+    a504: 01 00 80 52  	mov	w1, #0
+    a508: 60 1d 80 52  	mov	w0, #235
+    a50c: d9 60 00 94  	bl	0x22870 <_binary_analysis_0706_text_bin_start+0x21870>
+    a510: f3 03 00 aa  	mov	x19, x0
+    a514: c0 30 00 b4  	cbz	x0, 0xab2c <_binary_analysis_0706_text_bin_start+0x9b2c>
+    a518: e3 7b 40 b9  	ldr	w3, [sp, #120]
+    a51c: 9b ae 03 91  	add	x27, x20, #235
+    a520: e2 03 1b aa  	mov	x2, x27
+    a524: 61 1d 80 52  	mov	w1, #235
+    a528: b2 fe ff 97  	bl	0x9ff0 <_binary_analysis_0706_text_bin_start+0x8ff0>
+    a52c: 20 1a f8 37  	tbnz	w0, #31, 0xa870 <_binary_analysis_0706_text_bin_start+0x9870>
+    a530: 80 3e 00 91  	add	x0, x20, #15
+    a534: 00 00 13 cb  	sub	x0, x0, x19
+    a538: 1f 78 00 f1  	cmp	x0, #30
+    a53c: 89 18 00 54  	b.ls	0xa84c <_binary_analysis_0706_text_bin_start+0x984c>
+    a540: 80 02 c0 3d  	ldr	q0, [x20]
+    a544: 62 06 40 ad  	ldp	q2, q1, [x19]
+    a548: 67 9a 41 ad  	ldp	q7, q6, [x19, #48]
+    a54c: 42 1c 20 6e  	eor	v2.16b, v2.16b, v0.16b
+    a550: 60 0a c0 3d  	ldr	q0, [x19, #32]
+    a554: 65 92 42 ad  	ldp	q5, q4, [x19, #80]
+    a558: 62 02 80 3d  	str	q2, [x19]
+    a55c: 82 06 c0 3d  	ldr	q2, [x20, #16]
+    a560: 63 1e c0 3d  	ldr	q3, [x19, #112]
+    a564: 21 1c 22 6e  	eor	v1.16b, v1.16b, v2.16b
+    a568: 62 22 c0 3d  	ldr	q2, [x19, #128]
+    a56c: 61 06 80 3d  	str	q1, [x19, #16]
+    a570: 81 0a c0 3d  	ldr	q1, [x20, #32]
+    a574: 00 1c 21 6e  	eor	v0.16b, v0.16b, v1.16b
+    a578: 61 26 c0 3d  	ldr	q1, [x19, #144]
+    a57c: 60 0a 80 3d  	str	q0, [x19, #32]
+    a580: 90 0e c0 3d  	ldr	q16, [x20, #48]
+    a584: 60 2a c0 3d  	ldr	q0, [x19, #160]
+    a588: e7 1c 30 6e  	eor	v7.16b, v7.16b, v16.16b
+    a58c: 67 0e 80 3d  	str	q7, [x19, #48]
+    a590: 87 12 c0 3d  	ldr	q7, [x20, #64]
+    a594: c6 1c 27 6e  	eor	v6.16b, v6.16b, v7.16b
+    a598: 66 12 80 3d  	str	q6, [x19, #64]
+    a59c: 86 16 c0 3d  	ldr	q6, [x20, #80]
+    a5a0: a5 1c 26 6e  	eor	v5.16b, v5.16b, v6.16b
+    a5a4: 65 16 80 3d  	str	q5, [x19, #80]
+    a5a8: 85 1a c0 3d  	ldr	q5, [x20, #96]
+    a5ac: 84 1c 25 6e  	eor	v4.16b, v4.16b, v5.16b
+    a5b0: 64 1a 80 3d  	str	q4, [x19, #96]
+    a5b4: 84 1e c0 3d  	ldr	q4, [x20, #112]
+    a5b8: 63 1c 24 6e  	eor	v3.16b, v3.16b, v4.16b
+    a5bc: 63 1e 80 3d  	str	q3, [x19, #112]
+    a5c0: 83 22 c0 3d  	ldr	q3, [x20, #128]
+    a5c4: 42 1c 23 6e  	eor	v2.16b, v2.16b, v3.16b
+    a5c8: 62 22 80 3d  	str	q2, [x19, #128]
+    a5cc: 82 26 c0 3d  	ldr	q2, [x20, #144]
+    a5d0: 21 1c 22 6e  	eor	v1.16b, v1.16b, v2.16b
+    a5d4: 61 26 80 3d  	str	q1, [x19, #144]
+    a5d8: 81 2a c0 3d  	ldr	q1, [x20, #160]
+    a5dc: 00 1c 21 6e  	eor	v0.16b, v0.16b, v1.16b
+    a5e0: 60 2a 80 3d  	str	q0, [x19, #160]
+    a5e4: 67 82 43 39  	ldrb	w7, [x19, #224]
+    a5e8: 80 2e c0 3d  	ldr	q0, [x20, #176]
+    a5ec: 62 86 45 ad  	ldp	q2, q1, [x19, #176]
+    a5f0: 66 86 43 39  	ldrb	w6, [x19, #225]
+    a5f4: 65 8a 43 39  	ldrb	w5, [x19, #226]
+    a5f8: 42 1c 20 6e  	eor	v2.16b, v2.16b, v0.16b
+    a5fc: 64 8e 43 39  	ldrb	w4, [x19, #227]
+    a600: 60 36 c0 3d  	ldr	q0, [x19, #208]
+    a604: 63 92 43 39  	ldrb	w3, [x19, #228]
+    a608: 62 2e 80 3d  	str	q2, [x19, #176]
+    a60c: 62 96 43 39  	ldrb	w2, [x19, #229]
+    a610: 82 32 c0 3d  	ldr	q2, [x20, #192]
+    a614: 61 9a 43 39  	ldrb	w1, [x19, #230]
+    a618: 60 9e 43 39  	ldrb	w0, [x19, #231]
+    a61c: 21 1c 22 6e  	eor	v1.16b, v1.16b, v2.16b
+    a620: 61 32 80 3d  	str	q1, [x19, #192]
+    a624: 81 36 c0 3d  	ldr	q1, [x20, #208]
+    a628: 00 1c 21 6e  	eor	v0.16b, v0.16b, v1.16b
+    a62c: 60 36 80 3d  	str	q0, [x19, #208]
+    a630: 88 82 43 39  	ldrb	w8, [x20, #224]
+    a634: e7 00 08 4a  	eor	w7, w7, w8
+    a638: 67 82 03 39  	strb	w7, [x19, #224]
+    a63c: 87 86 43 39  	ldrb	w7, [x20, #225]
+    a640: c6 00 07 4a  	eor	w6, w6, w7
+    a644: 66 86 03 39  	strb	w6, [x19, #225]
+    a648: 86 8a 43 39  	ldrb	w6, [x20, #226]
+    a64c: a5 00 06 4a  	eor	w5, w5, w6
+    a650: 65 8a 03 39  	strb	w5, [x19, #226]
+    a654: 85 8e 43 39  	ldrb	w5, [x20, #227]
+    a658: 84 00 05 4a  	eor	w4, w4, w5
+    a65c: 64 8e 03 39  	strb	w4, [x19, #227]
+    a660: 84 92 43 39  	ldrb	w4, [x20, #228]
+    a664: 63 00 04 4a  	eor	w3, w3, w4
+    a668: 63 92 03 39  	strb	w3, [x19, #228]
+    a66c: 83 96 43 39  	ldrb	w3, [x20, #229]
+    a670: 42 00 03 4a  	eor	w2, w2, w3
+    a674: 62 96 03 39  	strb	w2, [x19, #229]
+    a678: 82 9a 43 39  	ldrb	w2, [x20, #230]
+    a67c: 21 00 02 4a  	eor	w1, w1, w2
+    a680: 61 9a 03 39  	strb	w1, [x19, #230]
+    a684: 81 9e 43 39  	ldrb	w1, [x20, #231]
+    a688: 00 00 01 4a  	eor	w0, w0, w1
+    a68c: 60 9e 03 39  	strb	w0, [x19, #231]
+    a690: 82 a2 43 39  	ldrb	w2, [x20, #232]
+    a694: 60 a2 43 39  	ldrb	w0, [x19, #232]
+    a698: 61 a6 43 39  	ldrb	w1, [x19, #233]
+    a69c: 00 00 02 4a  	eor	w0, w0, w2
+    a6a0: 60 a2 03 39  	strb	w0, [x19, #232]
+    a6a4: 60 aa 43 39  	ldrb	w0, [x19, #234]
+    a6a8: 82 a6 43 39  	ldrb	w2, [x20, #233]
+    a6ac: 21 00 02 4a  	eor	w1, w1, w2
+    a6b0: 61 a6 03 39  	strb	w1, [x19, #233]
+    a6b4: 81 aa 43 39  	ldrb	w1, [x20, #234]
+    a6b8: 00 00 01 4a  	eor	w0, w0, w1
+    a6bc: 60 aa 03 39  	strb	w0, [x19, #234]
+    a6c0: 60 02 40 39  	ldrb	w0, [x19]
+    a6c4: 1c 00 80 d2  	mov	x28, #0
+    a6c8: 00 18 00 12  	and	w0, w0, #0x7f
+    a6cc: 60 02 00 39  	strb	w0, [x19]
+    a6d0: 04 00 00 14  	b	0xa6e0 <_binary_analysis_0706_text_bin_start+0x96e0>
+    a6d4: 9c 07 00 91  	add	x28, x28, #1
+    a6d8: 9f af 03 f1  	cmp	x28, #235
+    a6dc: 20 07 00 54  	b.eq	0xa7c0 <_binary_analysis_0706_text_bin_start+0x97c0>
+    a6e0: 60 6a 7c 38  	ldrb	w0, [x19, x28]
+    a6e4: e1 03 1c 2a  	mov	w1, w28
+    a6e8: 60 ff ff 34  	cbz	w0, 0xa6d4 <_binary_analysis_0706_text_bin_start+0x96d4>
+    a6ec: 1f 04 00 71  	cmp	w0, #1
+    a6f0: 81 06 00 54  	b.ne	0xa7c0 <_binary_analysis_0706_text_bin_start+0x97c0>
+    a6f4: 3f 6c 03 71  	cmp	w1, #219
+    a6f8: 41 09 00 54  	b.ne	0xa820 <_binary_analysis_0706_text_bin_start+0x9820>
+    a6fc: 61 00 80 52  	mov	w1, #3
+    a700: e0 03 1a aa  	mov	x0, x26
+    a704: 01 80 a0 72  	movk	w1, #1024, lsl #16
+    a708: cc 5f 00 94  	bl	0x22638 <_binary_analysis_0706_text_bin_start+0x21638>
+    a70c: a0 10 00 35  	cbnz	w0, 0xa920 <_binary_analysis_0706_text_bin_start+0x9920>
+    a710: e0 73 40 b9  	ldr	w0, [sp, #112]
+    a714: e1 e3 03 91  	add	x1, sp, #248
+    a718: 02 01 80 d2  	mov	x2, #8
+    a71c: a1 5f 00 94  	bl	0x225a0 <_binary_analysis_0706_text_bin_start+0x215a0>
+    a720: 80 11 00 35  	cbnz	w0, 0xa950 <_binary_analysis_0706_text_bin_start+0x9950>
+    a724: e0 73 40 b9  	ldr	w0, [sp, #112]
+    a728: e2 03 17 2a  	mov	w2, w23
+    a72c: e1 03 16 aa  	mov	x1, x22
+    a730: 9c 5f 00 94  	bl	0x225a0 <_binary_analysis_0706_text_bin_start+0x215a0>
+    a734: 60 0b 00 35  	cbnz	w0, 0xa8a0 <_binary_analysis_0706_text_bin_start+0x98a0>
+    a738: e0 73 40 b9  	ldr	w0, [sp, #112]
+    a73c: 81 07 00 91  	add	x1, x28, #1
+    a740: 61 02 01 8b  	add	x1, x19, x1
+    a744: e4 03 18 aa  	mov	x4, x24
+    a748: e3 03 19 aa  	mov	x3, x25
+    a74c: e2 01 80 d2  	mov	x2, #15
+    a750: 9e 5f 00 94  	bl	0x225c8 <_binary_analysis_0706_text_bin_start+0x215c8>
+    a754: 40 17 00 35  	cbnz	w0, 0xaa3c <_binary_analysis_0706_text_bin_start+0x9a3c>
+    a758: e5 7b 40 b9  	ldr	w5, [sp, #120]
+    a75c: bf 50 00 71  	cmp	w5, #20
+    a760: 81 15 00 54  	b.ne	0xaa10 <_binary_analysis_0706_text_bin_start+0x9a10>
+    a764: e1 03 1b aa  	mov	x1, x27
+    a768: e0 03 19 aa  	mov	x0, x25
+    a76c: 82 02 80 d2  	mov	x2, #20
+    a770: 10 ea ff 97  	bl	0x4fb0 <_binary_analysis_0706_text_bin_start+0x3fb0>
+    a774: f7 03 00 2a  	mov	w23, w0
+    a778: c0 1a 00 35  	cbnz	w0, 0xaad0 <_binary_analysis_0706_text_bin_start+0x9ad0>
+    a77c: e0 03 13 aa  	mov	x0, x19
+    a780: 50 60 00 94  	bl	0x228c0 <_binary_analysis_0706_text_bin_start+0x218c0>
+    a784: fb 73 45 a9  	ldp	x27, x28, [sp, #80]
+    a788: e0 03 14 aa  	mov	x0, x20
+    a78c: 4d 60 00 94  	bl	0x228c0 <_binary_analysis_0706_text_bin_start+0x218c0>
+    a790: b5 66 41 f9  	ldr	x21, [x21, #712]
+    a794: e0 8f 40 f9  	ldr	x0, [sp, #280]
+    a798: a1 02 40 f9  	ldr	x1, [x21]
+    a79c: 01 00 01 ca  	eor	x1, x0, x1
+    a7a0: e1 1d 00 b5  	cbnz	x1, 0xab5c <_binary_analysis_0706_text_bin_start+0x9b5c>
+    a7a4: e0 03 17 2a  	mov	w0, w23
+    a7a8: f3 53 41 a9  	ldp	x19, x20, [sp, #16]
+    a7ac: f5 5b 42 a9  	ldp	x21, x22, [sp, #32]
+    a7b0: f7 63 43 a9  	ldp	x23, x24, [sp, #48]
+    a7b4: f9 6b 44 a9  	ldp	x25, x26, [sp, #64]
+    a7b8: fd 7b d2 a8  	ldp	x29, x30, [sp], #288
+    a7bc: c0 03 5f d6  	ret
+    a7c0: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9898>
+    a7c4: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9898>
+    a7c8: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x989c>
+    a7cc: 44 37 80 52  	mov	w4, #442
+    a7d0: 63 20 0a 91  	add	x3, x3, #648
+    a7d4: c1 02 29 91  	add	x1, x22, #2624
+    a7d8: 00 a0 33 91  	add	x0, x0, #3304
+    a7dc: e2 03 04 2a  	mov	w2, w4
+    a7e0: b8 00 80 12  	mov	w24, #-6
+    a7e4: f3 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a7e8: e0 03 13 aa  	mov	x0, x19
+    a7ec: 35 60 00 94  	bl	0x228c0 <_binary_analysis_0706_text_bin_start+0x218c0>
+    a7f0: 24 41 80 52  	mov	w4, #521
+    a7f4: e5 03 18 2a  	mov	w5, w24
+    a7f8: c1 02 29 91  	add	x1, x22, #2624
+    a7fc: e2 03 04 2a  	mov	w2, w4
+    a800: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x98d8>
+    a804: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x98d8>
+    a808: 63 60 0a 91  	add	x3, x3, #664
+    a80c: 00 c0 34 91  	add	x0, x0, #3376
+    a810: 57 00 80 12  	mov	w23, #-3
+    a814: e7 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a818: fb 73 45 a9  	ldp	x27, x28, [sp, #80]
+    a81c: db ff ff 17  	b	0xa788 <_binary_analysis_0706_text_bin_start+0x9788>
+    a820: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x98f4>
+    a824: 04 38 80 52  	mov	w4, #448
+    a828: c1 02 29 91  	add	x1, x22, #2624
+    a82c: e2 03 04 2a  	mov	w2, w4
+    a830: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9908>
+    a834: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9908>
+    a838: 63 20 0a 91  	add	x3, x3, #648
+    a83c: 00 a0 33 91  	add	x0, x0, #3304
+    a840: d8 00 80 12  	mov	w24, #-7
+    a844: db 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a848: e8 ff ff 17  	b	0xa7e8 <_binary_analysis_0706_text_bin_start+0x97e8>
+    a84c: 00 00 80 d2  	mov	x0, #0
+    a850: 81 6a 60 38  	ldrb	w1, [x20, x0]
+    a854: 62 6a 60 38  	ldrb	w2, [x19, x0]
+    a858: 21 00 02 4a  	eor	w1, w1, w2
+    a85c: 61 6a 20 38  	strb	w1, [x19, x0]
+    a860: 00 04 00 91  	add	x0, x0, #1
+    a864: 1f ac 03 f1  	cmp	x0, #235
+    a868: 41 ff ff 54  	b.ne	0xa850 <_binary_analysis_0706_text_bin_start+0x9850>
+    a86c: 95 ff ff 17  	b	0xa6c0 <_binary_analysis_0706_text_bin_start+0x96c0>
+    a870: e5 03 00 2a  	mov	w5, w0
+    a874: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9948>
+    a878: a4 35 80 52  	mov	w4, #429
+    a87c: c1 02 29 91  	add	x1, x22, #2624
+    a880: e2 03 04 2a  	mov	w2, w4
+    a884: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x995c>
+    a888: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x995c>
+    a88c: 63 20 0a 91  	add	x3, x3, #648
+    a890: 00 00 33 91  	add	x0, x0, #3264
+    a894: 98 00 80 12  	mov	w24, #-5
+    a898: c6 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a89c: d3 ff ff 17  	b	0xa7e8 <_binary_analysis_0706_text_bin_start+0x97e8>
+    a8a0: e5 03 00 2a  	mov	w5, w0
+    a8a4: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9978>
+    a8a8: a4 3a 80 52  	mov	w4, #469
+    a8ac: c1 02 29 91  	add	x1, x22, #2624
+    a8b0: e2 03 04 2a  	mov	w2, w4
+    a8b4: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x998c>
+    a8b8: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x998c>
+    a8bc: 63 20 0a 91  	add	x3, x3, #648
+    a8c0: 00 c0 2a 91  	add	x0, x0, #2736
+    a8c4: 38 01 80 12  	mov	w24, #-10
+    a8c8: ba 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a8cc: c7 ff ff 17  	b	0xa7e8 <_binary_analysis_0706_text_bin_start+0x97e8>
+    a8d0: 24 1d 80 52  	mov	w4, #233
+    a8d4: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x99ac>
+    a8d8: e2 03 04 2a  	mov	w2, w4
+    a8dc: 63 60 09 91  	add	x3, x3, #600
+    a8e0: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x99b4>
+    a8e4: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x99b8>
+    a8e8: c1 02 29 91  	add	x1, x22, #2624
+    a8ec: 00 20 29 91  	add	x0, x0, #2632
+    a8f0: b0 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a8f4: 05 00 80 12  	mov	w5, #-1
+    a8f8: c4 3f 80 52  	mov	w4, #510
+    a8fc: c1 02 29 91  	add	x1, x22, #2624
+    a900: e2 03 04 2a  	mov	w2, w4
+    a904: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x99dc>
+    a908: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x99dc>
+    a90c: 63 60 0a 91  	add	x3, x3, #664
+    a910: 00 a0 30 91  	add	x0, x0, #3112
+    a914: 37 00 80 12  	mov	w23, #-2
+    a918: a6 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a91c: 9b ff ff 17  	b	0xa788 <_binary_analysis_0706_text_bin_start+0x9788>
+    a920: e5 03 00 2a  	mov	w5, w0
+    a924: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x99f8>
+    a928: e4 38 80 52  	mov	w4, #455
+    a92c: c1 02 29 91  	add	x1, x22, #2624
+    a930: e2 03 04 2a  	mov	w2, w4
+    a934: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9a0c>
+    a938: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9a0c>
+    a93c: 63 20 0a 91  	add	x3, x3, #648
+    a940: 00 e0 29 91  	add	x0, x0, #2680
+    a944: f8 00 80 12  	mov	w24, #-8
+    a948: 9a 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a94c: a7 ff ff 17  	b	0xa7e8 <_binary_analysis_0706_text_bin_start+0x97e8>
+    a950: e5 03 00 2a  	mov	w5, w0
+    a954: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9a28>
+    a958: c4 39 80 52  	mov	w4, #462
+    a95c: c1 02 29 91  	add	x1, x22, #2624
+    a960: e2 03 04 2a  	mov	w2, w4
+    a964: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9a3c>
+    a968: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9a3c>
+    a96c: 63 20 0a 91  	add	x3, x3, #648
+    a970: 00 c0 2a 91  	add	x0, x0, #2736
+    a974: 18 01 80 12  	mov	w24, #-9
+    a978: 8e 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a97c: 9b ff ff 17  	b	0xa7e8 <_binary_analysis_0706_text_bin_start+0x97e8>
+    a980: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9a54>
+    a984: c4 33 80 52  	mov	w4, #414
+    a988: c1 02 29 91  	add	x1, x22, #2624
+    a98c: e2 03 04 2a  	mov	w2, w4
+    a990: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9a68>
+    a994: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9a68>
+    a998: 63 20 0a 91  	add	x3, x3, #648
+    a99c: 00 c0 31 91  	add	x0, x0, #3184
+    a9a0: 58 00 80 12  	mov	w24, #-3
+    a9a4: 83 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a9a8: 92 ff ff 17  	b	0xa7f0 <_binary_analysis_0706_text_bin_start+0x97f0>
+    a9ac: e5 03 00 2a  	mov	w5, w0
+    a9b0: 24 1e 80 52  	mov	w4, #241
+    a9b4: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9a8c>
+    a9b8: e2 03 04 2a  	mov	w2, w4
+    a9bc: 63 60 09 91  	add	x3, x3, #600
+    a9c0: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9a94>
+    a9c4: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9a98>
+    a9c8: c1 02 29 91  	add	x1, x22, #2624
+    a9cc: 00 80 2d 91  	add	x0, x0, #2912
+    a9d0: 78 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    a9d4: 25 00 80 12  	mov	w5, #-2
+    a9d8: fb 73 45 a9  	ldp	x27, x28, [sp, #80]
+    a9dc: c7 ff ff 17  	b	0xa8f8 <_binary_analysis_0706_text_bin_start+0x98f8>
+    a9e0: c4 1f 80 52  	mov	w4, #254
+    a9e4: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9abc>
+    a9e8: e2 03 04 2a  	mov	w2, w4
+    a9ec: 63 60 09 91  	add	x3, x3, #600
+    a9f0: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9ac4>
+    a9f4: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9ac8>
+    a9f8: c1 02 29 91  	add	x1, x22, #2624
+    a9fc: 00 00 2f 91  	add	x0, x0, #3008
+    aa00: 6c 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    aa04: 65 00 80 12  	mov	w5, #-4
+    aa08: fb 73 45 a9  	ldp	x27, x28, [sp, #80]
+    aa0c: bb ff ff 17  	b	0xa8f8 <_binary_analysis_0706_text_bin_start+0x98f8>
+    aa10: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9ae4>
+    aa14: 44 3c 80 52  	mov	w4, #482
+    aa18: c1 02 29 91  	add	x1, x22, #2624
+    aa1c: e2 03 04 2a  	mov	w2, w4
+    aa20: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9af8>
+    aa24: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9af8>
+    aa28: 63 20 0a 91  	add	x3, x3, #648
+    aa2c: 00 60 2b 91  	add	x0, x0, #2776
+    aa30: 78 01 80 12  	mov	w24, #-12
+    aa34: 5f 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    aa38: 6c ff ff 17  	b	0xa7e8 <_binary_analysis_0706_text_bin_start+0x97e8>
+    aa3c: e5 03 00 2a  	mov	w5, w0
+    aa40: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9b14>
+    aa44: 84 3b 80 52  	mov	w4, #476
+    aa48: c1 02 29 91  	add	x1, x22, #2624
+    aa4c: e2 03 04 2a  	mov	w2, w4
+    aa50: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9b28>
+    aa54: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9b28>
+    aa58: 63 20 0a 91  	add	x3, x3, #648
+    aa5c: 00 c0 2a 91  	add	x0, x0, #2736
+    aa60: 58 01 80 12  	mov	w24, #-11
+    aa64: 53 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    aa68: 60 ff ff 17  	b	0xa7e8 <_binary_analysis_0706_text_bin_start+0x97e8>
+    aa6c: e5 03 00 2a  	mov	w5, w0
+    aa70: e4 1e 80 52  	mov	w4, #247
+    aa74: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9b4c>
+    aa78: e2 03 04 2a  	mov	w2, w4
+    aa7c: 63 60 09 91  	add	x3, x3, #600
+    aa80: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9b54>
+    aa84: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9b58>
+    aa88: c1 02 29 91  	add	x1, x22, #2624
+    aa8c: 00 60 2e 91  	add	x0, x0, #2968
+    aa90: 48 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    aa94: 45 00 80 12  	mov	w5, #-3
+    aa98: fb 73 45 a9  	ldp	x27, x28, [sp, #80]
+    aa9c: 97 ff ff 17  	b	0xa8f8 <_binary_analysis_0706_text_bin_start+0x98f8>
+    aaa0: 04 3f 80 52  	mov	w4, #504
+    aaa4: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9b7c>
+    aaa8: e2 03 04 2a  	mov	w2, w4
+    aaac: 63 60 0a 91  	add	x3, x3, #664
+    aab0: a1 01 00 b0  	adrp	x1, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9b84>
+    aab4: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9b88>
+    aab8: 21 00 29 91  	add	x1, x1, #2624
+    aabc: 00 c0 2f 91  	add	x0, x0, #3056
+    aac0: 05 20 80 52  	mov	w5, #256
+    aac4: 17 00 80 12  	mov	w23, #-1
+    aac8: 3a 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    aacc: 31 ff ff 17  	b	0xa790 <_binary_analysis_0706_text_bin_start+0x9790>
+    aad0: e5 03 00 2a  	mov	w5, w0
+    aad4: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9ba8>
+    aad8: 24 3d 80 52  	mov	w4, #489
+    aadc: c1 02 29 91  	add	x1, x22, #2624
+    aae0: e2 03 04 2a  	mov	w2, w4
+    aae4: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9bbc>
+    aae8: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9bbc>
+    aaec: 63 20 0a 91  	add	x3, x3, #648
+    aaf0: 00 20 34 91  	add	x0, x0, #3336
+    aaf4: 98 01 80 12  	mov	w24, #-13
+    aaf8: 2e 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    aafc: 3b ff ff 17  	b	0xa7e8 <_binary_analysis_0706_text_bin_start+0x97e8>
+    ab00: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9bd4>
+    ab04: e4 31 80 52  	mov	w4, #399
+    ab08: c1 02 29 91  	add	x1, x22, #2624
+    ab0c: e2 03 04 2a  	mov	w2, w4
+    ab10: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9be8>
+    ab14: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9be8>
+    ab18: 63 20 0a 91  	add	x3, x3, #648
+    ab1c: 00 40 31 91  	add	x0, x0, #3152
+    ab20: 18 00 80 12  	mov	w24, #-1
+    ab24: 23 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    ab28: 32 ff ff 17  	b	0xa7f0 <_binary_analysis_0706_text_bin_start+0x97f0>
+    ab2c: b6 01 00 b0  	adrp	x22, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9c00>
+    ab30: c4 34 80 52  	mov	w4, #422
+    ab34: c1 02 29 91  	add	x1, x22, #2624
+    ab38: e2 03 04 2a  	mov	w2, w4
+    ab3c: a3 01 00 d0  	adrp	x3, 0x40000 <_binary_analysis_0706_text_bin_start+0x9c14>
+    ab40: a0 01 00 b0  	adrp	x0, 0x3f000 <_binary_analysis_0706_text_bin_start+0x9c14>
+    ab44: 63 20 0a 91  	add	x3, x3, #648
+    ab48: 00 40 32 91  	add	x0, x0, #3216
+    ab4c: 65 1d 80 52  	mov	w5, #235
+    ab50: 78 00 80 12  	mov	w24, #-4
+    ab54: 17 5f 00 94  	bl	0x227b0 <_binary_analysis_0706_text_bin_start+0x217b0>
+    ab58: 26 ff ff 17  	b	0xa7f0 <_binary_analysis_0706_text_bin_start+0x97f0>
+    ab5c: fb 73 05 a9  	stp	x27, x28, [sp, #80]
+    ab60: fc 5d 00 94  	bl	0x22350 <_binary_analysis_0706_text_bin_start+0x21350>
+    ab64: 00 00 00 00  	udf	#0
+    ab68: ff 43 0c d1  	sub	sp, sp, #784
+    ab6c: fd 7b 00 a9  	stp	x29, x30, [sp]
+    ab70: fd 03 00 91  	mov	x29, sp
+    ab74: f5 5b 02 a9  	stp	x21, x22, [sp, #32]
+    ab78: d6 01 00 d0  	adrp	x22, 0x44000 <_binary_analysis_0706_text_bin_start+0x9c60>
+    ab7c: f5 03 03 aa  	mov	x21, x3

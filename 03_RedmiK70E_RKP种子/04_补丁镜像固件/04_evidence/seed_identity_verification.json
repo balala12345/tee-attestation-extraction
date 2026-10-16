@@ -1,0 +1,15 @@
+{
+  "capture_maced_is_transport_only_not_identity": true,
+  "capture_maced_public_key_sha256": "60db63e1531fb99e4191ff4d6794828308c86dddd10f0ac07411bace493ef145",
+  "identity_length": 32,
+  "identity_public_spki_sha256": "64c672084035d3b8af4c7f2b036ce8905c06cd60bf39fa9bd6ec44cbe0ba4ad2",
+  "identity_semantics": "32-byte big-endian P-256 private scalar produced by the active Open-DICE CDI_Leaf path; direct input for this google-rkp-sw P-256 implementation",
+  "identity_sha256": "ac903105021c73ee239e83cabb1220bd1c65beca95f591df777e10a132f2f36c",
+  "native_dice_signatures_verified": 5,
+  "network_submitted": false,
+  "private_material_printed": false,
+  "same_run_match": true,
+  "same_run_native_cdi_leaf_spki_sha256": "64c672084035d3b8af4c7f2b036ce8905c06cd60bf39fa9bd6ec44cbe0ba4ad2",
+  "same_run_native_uds_spki_sha256": "d1a3f13b9fae014e1816a988fe4f611c320f315cc1252e366695f76c63bea3c9",
+  "status": "PASS"
+}

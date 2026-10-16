@@ -1,0 +1,4 @@
+InitializeContext=0x00000000
+OpenSession=0x00000000 origin=0x00000004
+InvokeCommand=0x00000000 origin=0x00000004
+TA status=0x00000000 payload=8578 descriptor=168 saved=yes

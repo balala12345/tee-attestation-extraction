@@ -1,0 +1,5 @@
+omitted=raw CDI/seed
+omitted=host private key
+omitted=original identity CBOR
+omitted=raw certificate response
+omitted=device serials and absolute host paths
